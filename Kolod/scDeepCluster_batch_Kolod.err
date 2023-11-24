@@ -1,0 +1,180 @@
+Traceback (most recent call last):
+  File "run_scDeepCluster.py", line 141, in <module>
+    y_pred_init=None, y=y, batch_size=args.batch_size, num_epochs=args.maxiter, update_interval=args.update_interval, tol=args.tol, save_dir=args.save_dir)
+  File "/research/rgs01/home/clusterHome/xyao/Packages/scDeepCluster_pytorch/scDeepCluster.py", line 163, in fit
+    self.y_pred = kmeans.fit_predict(data.data.cpu().numpy())
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 1077, in fit_predict
+    return self.fit(X, sample_weight=sample_weight).labels_
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 982, in fit
+    accept_large_sparse=False)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 721, in check_array
+    allow_nan=force_all_finite == 'allow-nan')
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 106, in _assert_all_finite
+    msg_dtype if msg_dtype is not None else X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+Traceback (most recent call last):
+  File "run_scDeepCluster.py", line 141, in <module>
+    y_pred_init=None, y=y, batch_size=args.batch_size, num_epochs=args.maxiter, update_interval=args.update_interval, tol=args.tol, save_dir=args.save_dir)
+  File "/research/rgs01/home/clusterHome/xyao/Packages/scDeepCluster_pytorch/scDeepCluster.py", line 163, in fit
+    self.y_pred = kmeans.fit_predict(data.data.cpu().numpy())
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 1077, in fit_predict
+    return self.fit(X, sample_weight=sample_weight).labels_
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 982, in fit
+    accept_large_sparse=False)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 721, in check_array
+    allow_nan=force_all_finite == 'allow-nan')
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 106, in _assert_all_finite
+    msg_dtype if msg_dtype is not None else X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+Traceback (most recent call last):
+  File "run_scDeepCluster.py", line 141, in <module>
+    y_pred_init=None, y=y, batch_size=args.batch_size, num_epochs=args.maxiter, update_interval=args.update_interval, tol=args.tol, save_dir=args.save_dir)
+  File "/research/rgs01/home/clusterHome/xyao/Packages/scDeepCluster_pytorch/scDeepCluster.py", line 163, in fit
+    self.y_pred = kmeans.fit_predict(data.data.cpu().numpy())
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 1077, in fit_predict
+    return self.fit(X, sample_weight=sample_weight).labels_
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 982, in fit
+    accept_large_sparse=False)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 721, in check_array
+    allow_nan=force_all_finite == 'allow-nan')
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 106, in _assert_all_finite
+    msg_dtype if msg_dtype is not None else X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+Traceback (most recent call last):
+  File "run_scDeepCluster.py", line 141, in <module>
+    y_pred_init=None, y=y, batch_size=args.batch_size, num_epochs=args.maxiter, update_interval=args.update_interval, tol=args.tol, save_dir=args.save_dir)
+  File "/research/rgs01/home/clusterHome/xyao/Packages/scDeepCluster_pytorch/scDeepCluster.py", line 163, in fit
+    self.y_pred = kmeans.fit_predict(data.data.cpu().numpy())
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 1077, in fit_predict
+    return self.fit(X, sample_weight=sample_weight).labels_
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 982, in fit
+    accept_large_sparse=False)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 721, in check_array
+    allow_nan=force_all_finite == 'allow-nan')
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 106, in _assert_all_finite
+    msg_dtype if msg_dtype is not None else X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+Traceback (most recent call last):
+  File "run_scDeepCluster.py", line 141, in <module>
+    y_pred_init=None, y=y, batch_size=args.batch_size, num_epochs=args.maxiter, update_interval=args.update_interval, tol=args.tol, save_dir=args.save_dir)
+  File "/research/rgs01/home/clusterHome/xyao/Packages/scDeepCluster_pytorch/scDeepCluster.py", line 163, in fit
+    self.y_pred = kmeans.fit_predict(data.data.cpu().numpy())
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 1077, in fit_predict
+    return self.fit(X, sample_weight=sample_weight).labels_
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 982, in fit
+    accept_large_sparse=False)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 721, in check_array
+    allow_nan=force_all_finite == 'allow-nan')
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 106, in _assert_all_finite
+    msg_dtype if msg_dtype is not None else X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+Traceback (most recent call last):
+  File "run_scDeepCluster.py", line 141, in <module>
+    y_pred_init=None, y=y, batch_size=args.batch_size, num_epochs=args.maxiter, update_interval=args.update_interval, tol=args.tol, save_dir=args.save_dir)
+  File "/research/rgs01/home/clusterHome/xyao/Packages/scDeepCluster_pytorch/scDeepCluster.py", line 163, in fit
+    self.y_pred = kmeans.fit_predict(data.data.cpu().numpy())
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 1077, in fit_predict
+    return self.fit(X, sample_weight=sample_weight).labels_
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 982, in fit
+    accept_large_sparse=False)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 721, in check_array
+    allow_nan=force_all_finite == 'allow-nan')
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 106, in _assert_all_finite
+    msg_dtype if msg_dtype is not None else X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+Traceback (most recent call last):
+  File "run_scDeepCluster.py", line 141, in <module>
+    y_pred_init=None, y=y, batch_size=args.batch_size, num_epochs=args.maxiter, update_interval=args.update_interval, tol=args.tol, save_dir=args.save_dir)
+  File "/research/rgs01/home/clusterHome/xyao/Packages/scDeepCluster_pytorch/scDeepCluster.py", line 163, in fit
+    self.y_pred = kmeans.fit_predict(data.data.cpu().numpy())
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 1077, in fit_predict
+    return self.fit(X, sample_weight=sample_weight).labels_
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 982, in fit
+    accept_large_sparse=False)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 721, in check_array
+    allow_nan=force_all_finite == 'allow-nan')
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 106, in _assert_all_finite
+    msg_dtype if msg_dtype is not None else X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+Traceback (most recent call last):
+  File "run_scDeepCluster.py", line 141, in <module>
+    y_pred_init=None, y=y, batch_size=args.batch_size, num_epochs=args.maxiter, update_interval=args.update_interval, tol=args.tol, save_dir=args.save_dir)
+  File "/research/rgs01/home/clusterHome/xyao/Packages/scDeepCluster_pytorch/scDeepCluster.py", line 163, in fit
+    self.y_pred = kmeans.fit_predict(data.data.cpu().numpy())
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 1077, in fit_predict
+    return self.fit(X, sample_weight=sample_weight).labels_
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 982, in fit
+    accept_large_sparse=False)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 721, in check_array
+    allow_nan=force_all_finite == 'allow-nan')
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 106, in _assert_all_finite
+    msg_dtype if msg_dtype is not None else X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+Traceback (most recent call last):
+  File "run_scDeepCluster.py", line 141, in <module>
+    y_pred_init=None, y=y, batch_size=args.batch_size, num_epochs=args.maxiter, update_interval=args.update_interval, tol=args.tol, save_dir=args.save_dir)
+  File "/research/rgs01/home/clusterHome/xyao/Packages/scDeepCluster_pytorch/scDeepCluster.py", line 163, in fit
+    self.y_pred = kmeans.fit_predict(data.data.cpu().numpy())
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 1077, in fit_predict
+    return self.fit(X, sample_weight=sample_weight).labels_
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 982, in fit
+    accept_large_sparse=False)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 721, in check_array
+    allow_nan=force_all_finite == 'allow-nan')
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 106, in _assert_all_finite
+    msg_dtype if msg_dtype is not None else X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+Traceback (most recent call last):
+  File "run_scDeepCluster.py", line 141, in <module>
+    y_pred_init=None, y=y, batch_size=args.batch_size, num_epochs=args.maxiter, update_interval=args.update_interval, tol=args.tol, save_dir=args.save_dir)
+  File "/research/rgs01/home/clusterHome/xyao/Packages/scDeepCluster_pytorch/scDeepCluster.py", line 163, in fit
+    self.y_pred = kmeans.fit_predict(data.data.cpu().numpy())
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 1077, in fit_predict
+    return self.fit(X, sample_weight=sample_weight).labels_
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/cluster/_kmeans.py", line 982, in fit
+    accept_large_sparse=False)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 721, in check_array
+    allow_nan=force_all_finite == 'allow-nan')
+  File "/home/xyao/.conda/envs/scDeepCluster/lib/python3.6/site-packages/sklearn/utils/validation.py", line 106, in _assert_all_finite
+    msg_dtype if msg_dtype is not None else X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').

@@ -1,0 +1,3390 @@
+1 has been submitted!
+The random seed set for torch is seed = 854
+### Autoencoder: Successfully preprocessed 14000 genes and 704 cells.
+Namespace(ae_weight_file='AE_weights.pth.tar', ae_weights=None, batch_size=256, data_file='/home/xyao/scVI/scVI_cell_clustering_HPC/Data/Kolod/Kolod_scVI_input_raw.h5ad', device='cpu', final_latent_file='final_latent_file.txt', gamma=1.0, knn=20, maxiter=2000, n_clusters=3, predict_label_file='/home/xyao/scDeepCluster/Result/Kolod/Batch_1/pred_labels.txt', pretrain_epochs=300, resolution=0.8, save_dir='/home/xyao/scDeepCluster/Result/Kolod/Batch_1', select_genes=0, sigma=2.5, tol=0.001, update_interval=1)
+(704, 14000)
+scDeepCluster(
+  (encoder): Sequential(
+    (0): Linear(in_features=14000, out_features=256, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=256, out_features=64, bias=True)
+    (3): ReLU()
+  )
+  (decoder): Sequential(
+    (0): Linear(in_features=32, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=64, out_features=256, bias=True)
+    (3): ReLU()
+  )
+  (_enc_mu): Linear(in_features=64, out_features=32, bias=True)
+  (_dec_mean): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): MeanAct()
+  )
+  (_dec_disp): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): DispAct()
+  )
+  (_dec_pi): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): Sigmoid()
+  )
+  (zinb_loss): ZINBLoss()
+)
+Pretraining stage
+Pretrain epoch   1, ZINB loss: 143.49079063
+Pretrain epoch   2, ZINB loss: 110.55321711
+Pretrain epoch   3, ZINB loss: 42.95668151
+Pretrain epoch   4, ZINB loss: 8.65147040
+Pretrain epoch   5, ZINB loss: nan
+Pretrain epoch   6, ZINB loss: nan
+Pretrain epoch   7, ZINB loss: nan
+Pretrain epoch   8, ZINB loss: nan
+Pretrain epoch   9, ZINB loss: nan
+Pretrain epoch  10, ZINB loss: nan
+Pretrain epoch  11, ZINB loss: nan
+Pretrain epoch  12, ZINB loss: nan
+Pretrain epoch  13, ZINB loss: nan
+Pretrain epoch  14, ZINB loss: nan
+Pretrain epoch  15, ZINB loss: nan
+Pretrain epoch  16, ZINB loss: nan
+Pretrain epoch  17, ZINB loss: nan
+Pretrain epoch  18, ZINB loss: nan
+Pretrain epoch  19, ZINB loss: nan
+Pretrain epoch  20, ZINB loss: nan
+Pretrain epoch  21, ZINB loss: nan
+Pretrain epoch  22, ZINB loss: nan
+Pretrain epoch  23, ZINB loss: nan
+Pretrain epoch  24, ZINB loss: nan
+Pretrain epoch  25, ZINB loss: nan
+Pretrain epoch  26, ZINB loss: nan
+Pretrain epoch  27, ZINB loss: nan
+Pretrain epoch  28, ZINB loss: nan
+Pretrain epoch  29, ZINB loss: nan
+Pretrain epoch  30, ZINB loss: nan
+Pretrain epoch  31, ZINB loss: nan
+Pretrain epoch  32, ZINB loss: nan
+Pretrain epoch  33, ZINB loss: nan
+Pretrain epoch  34, ZINB loss: nan
+Pretrain epoch  35, ZINB loss: nan
+Pretrain epoch  36, ZINB loss: nan
+Pretrain epoch  37, ZINB loss: nan
+Pretrain epoch  38, ZINB loss: nan
+Pretrain epoch  39, ZINB loss: nan
+Pretrain epoch  40, ZINB loss: nan
+Pretrain epoch  41, ZINB loss: nan
+Pretrain epoch  42, ZINB loss: nan
+Pretrain epoch  43, ZINB loss: nan
+Pretrain epoch  44, ZINB loss: nan
+Pretrain epoch  45, ZINB loss: nan
+Pretrain epoch  46, ZINB loss: nan
+Pretrain epoch  47, ZINB loss: nan
+Pretrain epoch  48, ZINB loss: nan
+Pretrain epoch  49, ZINB loss: nan
+Pretrain epoch  50, ZINB loss: nan
+Pretrain epoch  51, ZINB loss: nan
+Pretrain epoch  52, ZINB loss: nan
+Pretrain epoch  53, ZINB loss: nan
+Pretrain epoch  54, ZINB loss: nan
+Pretrain epoch  55, ZINB loss: nan
+Pretrain epoch  56, ZINB loss: nan
+Pretrain epoch  57, ZINB loss: nan
+Pretrain epoch  58, ZINB loss: nan
+Pretrain epoch  59, ZINB loss: nan
+Pretrain epoch  60, ZINB loss: nan
+Pretrain epoch  61, ZINB loss: nan
+Pretrain epoch  62, ZINB loss: nan
+Pretrain epoch  63, ZINB loss: nan
+Pretrain epoch  64, ZINB loss: nan
+Pretrain epoch  65, ZINB loss: nan
+Pretrain epoch  66, ZINB loss: nan
+Pretrain epoch  67, ZINB loss: nan
+Pretrain epoch  68, ZINB loss: nan
+Pretrain epoch  69, ZINB loss: nan
+Pretrain epoch  70, ZINB loss: nan
+Pretrain epoch  71, ZINB loss: nan
+Pretrain epoch  72, ZINB loss: nan
+Pretrain epoch  73, ZINB loss: nan
+Pretrain epoch  74, ZINB loss: nan
+Pretrain epoch  75, ZINB loss: nan
+Pretrain epoch  76, ZINB loss: nan
+Pretrain epoch  77, ZINB loss: nan
+Pretrain epoch  78, ZINB loss: nan
+Pretrain epoch  79, ZINB loss: nan
+Pretrain epoch  80, ZINB loss: nan
+Pretrain epoch  81, ZINB loss: nan
+Pretrain epoch  82, ZINB loss: nan
+Pretrain epoch  83, ZINB loss: nan
+Pretrain epoch  84, ZINB loss: nan
+Pretrain epoch  85, ZINB loss: nan
+Pretrain epoch  86, ZINB loss: nan
+Pretrain epoch  87, ZINB loss: nan
+Pretrain epoch  88, ZINB loss: nan
+Pretrain epoch  89, ZINB loss: nan
+Pretrain epoch  90, ZINB loss: nan
+Pretrain epoch  91, ZINB loss: nan
+Pretrain epoch  92, ZINB loss: nan
+Pretrain epoch  93, ZINB loss: nan
+Pretrain epoch  94, ZINB loss: nan
+Pretrain epoch  95, ZINB loss: nan
+Pretrain epoch  96, ZINB loss: nan
+Pretrain epoch  97, ZINB loss: nan
+Pretrain epoch  98, ZINB loss: nan
+Pretrain epoch  99, ZINB loss: nan
+Pretrain epoch 100, ZINB loss: nan
+Pretrain epoch 101, ZINB loss: nan
+Pretrain epoch 102, ZINB loss: nan
+Pretrain epoch 103, ZINB loss: nan
+Pretrain epoch 104, ZINB loss: nan
+Pretrain epoch 105, ZINB loss: nan
+Pretrain epoch 106, ZINB loss: nan
+Pretrain epoch 107, ZINB loss: nan
+Pretrain epoch 108, ZINB loss: nan
+Pretrain epoch 109, ZINB loss: nan
+Pretrain epoch 110, ZINB loss: nan
+Pretrain epoch 111, ZINB loss: nan
+Pretrain epoch 112, ZINB loss: nan
+Pretrain epoch 113, ZINB loss: nan
+Pretrain epoch 114, ZINB loss: nan
+Pretrain epoch 115, ZINB loss: nan
+Pretrain epoch 116, ZINB loss: nan
+Pretrain epoch 117, ZINB loss: nan
+Pretrain epoch 118, ZINB loss: nan
+Pretrain epoch 119, ZINB loss: nan
+Pretrain epoch 120, ZINB loss: nan
+Pretrain epoch 121, ZINB loss: nan
+Pretrain epoch 122, ZINB loss: nan
+Pretrain epoch 123, ZINB loss: nan
+Pretrain epoch 124, ZINB loss: nan
+Pretrain epoch 125, ZINB loss: nan
+Pretrain epoch 126, ZINB loss: nan
+Pretrain epoch 127, ZINB loss: nan
+Pretrain epoch 128, ZINB loss: nan
+Pretrain epoch 129, ZINB loss: nan
+Pretrain epoch 130, ZINB loss: nan
+Pretrain epoch 131, ZINB loss: nan
+Pretrain epoch 132, ZINB loss: nan
+Pretrain epoch 133, ZINB loss: nan
+Pretrain epoch 134, ZINB loss: nan
+Pretrain epoch 135, ZINB loss: nan
+Pretrain epoch 136, ZINB loss: nan
+Pretrain epoch 137, ZINB loss: nan
+Pretrain epoch 138, ZINB loss: nan
+Pretrain epoch 139, ZINB loss: nan
+Pretrain epoch 140, ZINB loss: nan
+Pretrain epoch 141, ZINB loss: nan
+Pretrain epoch 142, ZINB loss: nan
+Pretrain epoch 143, ZINB loss: nan
+Pretrain epoch 144, ZINB loss: nan
+Pretrain epoch 145, ZINB loss: nan
+Pretrain epoch 146, ZINB loss: nan
+Pretrain epoch 147, ZINB loss: nan
+Pretrain epoch 148, ZINB loss: nan
+Pretrain epoch 149, ZINB loss: nan
+Pretrain epoch 150, ZINB loss: nan
+Pretrain epoch 151, ZINB loss: nan
+Pretrain epoch 152, ZINB loss: nan
+Pretrain epoch 153, ZINB loss: nan
+Pretrain epoch 154, ZINB loss: nan
+Pretrain epoch 155, ZINB loss: nan
+Pretrain epoch 156, ZINB loss: nan
+Pretrain epoch 157, ZINB loss: nan
+Pretrain epoch 158, ZINB loss: nan
+Pretrain epoch 159, ZINB loss: nan
+Pretrain epoch 160, ZINB loss: nan
+Pretrain epoch 161, ZINB loss: nan
+Pretrain epoch 162, ZINB loss: nan
+Pretrain epoch 163, ZINB loss: nan
+Pretrain epoch 164, ZINB loss: nan
+Pretrain epoch 165, ZINB loss: nan
+Pretrain epoch 166, ZINB loss: nan
+Pretrain epoch 167, ZINB loss: nan
+Pretrain epoch 168, ZINB loss: nan
+Pretrain epoch 169, ZINB loss: nan
+Pretrain epoch 170, ZINB loss: nan
+Pretrain epoch 171, ZINB loss: nan
+Pretrain epoch 172, ZINB loss: nan
+Pretrain epoch 173, ZINB loss: nan
+Pretrain epoch 174, ZINB loss: nan
+Pretrain epoch 175, ZINB loss: nan
+Pretrain epoch 176, ZINB loss: nan
+Pretrain epoch 177, ZINB loss: nan
+Pretrain epoch 178, ZINB loss: nan
+Pretrain epoch 179, ZINB loss: nan
+Pretrain epoch 180, ZINB loss: nan
+Pretrain epoch 181, ZINB loss: nan
+Pretrain epoch 182, ZINB loss: nan
+Pretrain epoch 183, ZINB loss: nan
+Pretrain epoch 184, ZINB loss: nan
+Pretrain epoch 185, ZINB loss: nan
+Pretrain epoch 186, ZINB loss: nan
+Pretrain epoch 187, ZINB loss: nan
+Pretrain epoch 188, ZINB loss: nan
+Pretrain epoch 189, ZINB loss: nan
+Pretrain epoch 190, ZINB loss: nan
+Pretrain epoch 191, ZINB loss: nan
+Pretrain epoch 192, ZINB loss: nan
+Pretrain epoch 193, ZINB loss: nan
+Pretrain epoch 194, ZINB loss: nan
+Pretrain epoch 195, ZINB loss: nan
+Pretrain epoch 196, ZINB loss: nan
+Pretrain epoch 197, ZINB loss: nan
+Pretrain epoch 198, ZINB loss: nan
+Pretrain epoch 199, ZINB loss: nan
+Pretrain epoch 200, ZINB loss: nan
+Pretrain epoch 201, ZINB loss: nan
+Pretrain epoch 202, ZINB loss: nan
+Pretrain epoch 203, ZINB loss: nan
+Pretrain epoch 204, ZINB loss: nan
+Pretrain epoch 205, ZINB loss: nan
+Pretrain epoch 206, ZINB loss: nan
+Pretrain epoch 207, ZINB loss: nan
+Pretrain epoch 208, ZINB loss: nan
+Pretrain epoch 209, ZINB loss: nan
+Pretrain epoch 210, ZINB loss: nan
+Pretrain epoch 211, ZINB loss: nan
+Pretrain epoch 212, ZINB loss: nan
+Pretrain epoch 213, ZINB loss: nan
+Pretrain epoch 214, ZINB loss: nan
+Pretrain epoch 215, ZINB loss: nan
+Pretrain epoch 216, ZINB loss: nan
+Pretrain epoch 217, ZINB loss: nan
+Pretrain epoch 218, ZINB loss: nan
+Pretrain epoch 219, ZINB loss: nan
+Pretrain epoch 220, ZINB loss: nan
+Pretrain epoch 221, ZINB loss: nan
+Pretrain epoch 222, ZINB loss: nan
+Pretrain epoch 223, ZINB loss: nan
+Pretrain epoch 224, ZINB loss: nan
+Pretrain epoch 225, ZINB loss: nan
+Pretrain epoch 226, ZINB loss: nan
+Pretrain epoch 227, ZINB loss: nan
+Pretrain epoch 228, ZINB loss: nan
+Pretrain epoch 229, ZINB loss: nan
+Pretrain epoch 230, ZINB loss: nan
+Pretrain epoch 231, ZINB loss: nan
+Pretrain epoch 232, ZINB loss: nan
+Pretrain epoch 233, ZINB loss: nan
+Pretrain epoch 234, ZINB loss: nan
+Pretrain epoch 235, ZINB loss: nan
+Pretrain epoch 236, ZINB loss: nan
+Pretrain epoch 237, ZINB loss: nan
+Pretrain epoch 238, ZINB loss: nan
+Pretrain epoch 239, ZINB loss: nan
+Pretrain epoch 240, ZINB loss: nan
+Pretrain epoch 241, ZINB loss: nan
+Pretrain epoch 242, ZINB loss: nan
+Pretrain epoch 243, ZINB loss: nan
+Pretrain epoch 244, ZINB loss: nan
+Pretrain epoch 245, ZINB loss: nan
+Pretrain epoch 246, ZINB loss: nan
+Pretrain epoch 247, ZINB loss: nan
+Pretrain epoch 248, ZINB loss: nan
+Pretrain epoch 249, ZINB loss: nan
+Pretrain epoch 250, ZINB loss: nan
+Pretrain epoch 251, ZINB loss: nan
+Pretrain epoch 252, ZINB loss: nan
+Pretrain epoch 253, ZINB loss: nan
+Pretrain epoch 254, ZINB loss: nan
+Pretrain epoch 255, ZINB loss: nan
+Pretrain epoch 256, ZINB loss: nan
+Pretrain epoch 257, ZINB loss: nan
+Pretrain epoch 258, ZINB loss: nan
+Pretrain epoch 259, ZINB loss: nan
+Pretrain epoch 260, ZINB loss: nan
+Pretrain epoch 261, ZINB loss: nan
+Pretrain epoch 262, ZINB loss: nan
+Pretrain epoch 263, ZINB loss: nan
+Pretrain epoch 264, ZINB loss: nan
+Pretrain epoch 265, ZINB loss: nan
+Pretrain epoch 266, ZINB loss: nan
+Pretrain epoch 267, ZINB loss: nan
+Pretrain epoch 268, ZINB loss: nan
+Pretrain epoch 269, ZINB loss: nan
+Pretrain epoch 270, ZINB loss: nan
+Pretrain epoch 271, ZINB loss: nan
+Pretrain epoch 272, ZINB loss: nan
+Pretrain epoch 273, ZINB loss: nan
+Pretrain epoch 274, ZINB loss: nan
+Pretrain epoch 275, ZINB loss: nan
+Pretrain epoch 276, ZINB loss: nan
+Pretrain epoch 277, ZINB loss: nan
+Pretrain epoch 278, ZINB loss: nan
+Pretrain epoch 279, ZINB loss: nan
+Pretrain epoch 280, ZINB loss: nan
+Pretrain epoch 281, ZINB loss: nan
+Pretrain epoch 282, ZINB loss: nan
+Pretrain epoch 283, ZINB loss: nan
+Pretrain epoch 284, ZINB loss: nan
+Pretrain epoch 285, ZINB loss: nan
+Pretrain epoch 286, ZINB loss: nan
+Pretrain epoch 287, ZINB loss: nan
+Pretrain epoch 288, ZINB loss: nan
+Pretrain epoch 289, ZINB loss: nan
+Pretrain epoch 290, ZINB loss: nan
+Pretrain epoch 291, ZINB loss: nan
+Pretrain epoch 292, ZINB loss: nan
+Pretrain epoch 293, ZINB loss: nan
+Pretrain epoch 294, ZINB loss: nan
+Pretrain epoch 295, ZINB loss: nan
+Pretrain epoch 296, ZINB loss: nan
+Pretrain epoch 297, ZINB loss: nan
+Pretrain epoch 298, ZINB loss: nan
+Pretrain epoch 299, ZINB loss: nan
+Pretrain epoch 300, ZINB loss: nan
+Pretraining time: 95 seconds.
+Clustering stage
+Initializing cluster centers with kmeans.
+1 has been completed
+-----------------------
+2 has been submitted!
+The random seed set for torch is seed = 345
+### Autoencoder: Successfully preprocessed 14000 genes and 704 cells.
+Namespace(ae_weight_file='AE_weights.pth.tar', ae_weights=None, batch_size=256, data_file='/home/xyao/scVI/scVI_cell_clustering_HPC/Data/Kolod/Kolod_scVI_input_raw.h5ad', device='cpu', final_latent_file='final_latent_file.txt', gamma=1.0, knn=20, maxiter=2000, n_clusters=3, predict_label_file='/home/xyao/scDeepCluster/Result/Kolod/Batch_2/pred_labels.txt', pretrain_epochs=300, resolution=0.8, save_dir='/home/xyao/scDeepCluster/Result/Kolod/Batch_2', select_genes=0, sigma=2.5, tol=0.001, update_interval=1)
+(704, 14000)
+scDeepCluster(
+  (encoder): Sequential(
+    (0): Linear(in_features=14000, out_features=256, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=256, out_features=64, bias=True)
+    (3): ReLU()
+  )
+  (decoder): Sequential(
+    (0): Linear(in_features=32, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=64, out_features=256, bias=True)
+    (3): ReLU()
+  )
+  (_enc_mu): Linear(in_features=64, out_features=32, bias=True)
+  (_dec_mean): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): MeanAct()
+  )
+  (_dec_disp): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): DispAct()
+  )
+  (_dec_pi): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): Sigmoid()
+  )
+  (zinb_loss): ZINBLoss()
+)
+Pretraining stage
+Pretrain epoch   1, ZINB loss: 142.14356440
+Pretrain epoch   2, ZINB loss: 103.93489560
+Pretrain epoch   3, ZINB loss: 36.99174291
+Pretrain epoch   4, ZINB loss: 7.62167077
+Pretrain epoch   5, ZINB loss: nan
+Pretrain epoch   6, ZINB loss: nan
+Pretrain epoch   7, ZINB loss: nan
+Pretrain epoch   8, ZINB loss: nan
+Pretrain epoch   9, ZINB loss: nan
+Pretrain epoch  10, ZINB loss: nan
+Pretrain epoch  11, ZINB loss: nan
+Pretrain epoch  12, ZINB loss: nan
+Pretrain epoch  13, ZINB loss: nan
+Pretrain epoch  14, ZINB loss: nan
+Pretrain epoch  15, ZINB loss: nan
+Pretrain epoch  16, ZINB loss: nan
+Pretrain epoch  17, ZINB loss: nan
+Pretrain epoch  18, ZINB loss: nan
+Pretrain epoch  19, ZINB loss: nan
+Pretrain epoch  20, ZINB loss: nan
+Pretrain epoch  21, ZINB loss: nan
+Pretrain epoch  22, ZINB loss: nan
+Pretrain epoch  23, ZINB loss: nan
+Pretrain epoch  24, ZINB loss: nan
+Pretrain epoch  25, ZINB loss: nan
+Pretrain epoch  26, ZINB loss: nan
+Pretrain epoch  27, ZINB loss: nan
+Pretrain epoch  28, ZINB loss: nan
+Pretrain epoch  29, ZINB loss: nan
+Pretrain epoch  30, ZINB loss: nan
+Pretrain epoch  31, ZINB loss: nan
+Pretrain epoch  32, ZINB loss: nan
+Pretrain epoch  33, ZINB loss: nan
+Pretrain epoch  34, ZINB loss: nan
+Pretrain epoch  35, ZINB loss: nan
+Pretrain epoch  36, ZINB loss: nan
+Pretrain epoch  37, ZINB loss: nan
+Pretrain epoch  38, ZINB loss: nan
+Pretrain epoch  39, ZINB loss: nan
+Pretrain epoch  40, ZINB loss: nan
+Pretrain epoch  41, ZINB loss: nan
+Pretrain epoch  42, ZINB loss: nan
+Pretrain epoch  43, ZINB loss: nan
+Pretrain epoch  44, ZINB loss: nan
+Pretrain epoch  45, ZINB loss: nan
+Pretrain epoch  46, ZINB loss: nan
+Pretrain epoch  47, ZINB loss: nan
+Pretrain epoch  48, ZINB loss: nan
+Pretrain epoch  49, ZINB loss: nan
+Pretrain epoch  50, ZINB loss: nan
+Pretrain epoch  51, ZINB loss: nan
+Pretrain epoch  52, ZINB loss: nan
+Pretrain epoch  53, ZINB loss: nan
+Pretrain epoch  54, ZINB loss: nan
+Pretrain epoch  55, ZINB loss: nan
+Pretrain epoch  56, ZINB loss: nan
+Pretrain epoch  57, ZINB loss: nan
+Pretrain epoch  58, ZINB loss: nan
+Pretrain epoch  59, ZINB loss: nan
+Pretrain epoch  60, ZINB loss: nan
+Pretrain epoch  61, ZINB loss: nan
+Pretrain epoch  62, ZINB loss: nan
+Pretrain epoch  63, ZINB loss: nan
+Pretrain epoch  64, ZINB loss: nan
+Pretrain epoch  65, ZINB loss: nan
+Pretrain epoch  66, ZINB loss: nan
+Pretrain epoch  67, ZINB loss: nan
+Pretrain epoch  68, ZINB loss: nan
+Pretrain epoch  69, ZINB loss: nan
+Pretrain epoch  70, ZINB loss: nan
+Pretrain epoch  71, ZINB loss: nan
+Pretrain epoch  72, ZINB loss: nan
+Pretrain epoch  73, ZINB loss: nan
+Pretrain epoch  74, ZINB loss: nan
+Pretrain epoch  75, ZINB loss: nan
+Pretrain epoch  76, ZINB loss: nan
+Pretrain epoch  77, ZINB loss: nan
+Pretrain epoch  78, ZINB loss: nan
+Pretrain epoch  79, ZINB loss: nan
+Pretrain epoch  80, ZINB loss: nan
+Pretrain epoch  81, ZINB loss: nan
+Pretrain epoch  82, ZINB loss: nan
+Pretrain epoch  83, ZINB loss: nan
+Pretrain epoch  84, ZINB loss: nan
+Pretrain epoch  85, ZINB loss: nan
+Pretrain epoch  86, ZINB loss: nan
+Pretrain epoch  87, ZINB loss: nan
+Pretrain epoch  88, ZINB loss: nan
+Pretrain epoch  89, ZINB loss: nan
+Pretrain epoch  90, ZINB loss: nan
+Pretrain epoch  91, ZINB loss: nan
+Pretrain epoch  92, ZINB loss: nan
+Pretrain epoch  93, ZINB loss: nan
+Pretrain epoch  94, ZINB loss: nan
+Pretrain epoch  95, ZINB loss: nan
+Pretrain epoch  96, ZINB loss: nan
+Pretrain epoch  97, ZINB loss: nan
+Pretrain epoch  98, ZINB loss: nan
+Pretrain epoch  99, ZINB loss: nan
+Pretrain epoch 100, ZINB loss: nan
+Pretrain epoch 101, ZINB loss: nan
+Pretrain epoch 102, ZINB loss: nan
+Pretrain epoch 103, ZINB loss: nan
+Pretrain epoch 104, ZINB loss: nan
+Pretrain epoch 105, ZINB loss: nan
+Pretrain epoch 106, ZINB loss: nan
+Pretrain epoch 107, ZINB loss: nan
+Pretrain epoch 108, ZINB loss: nan
+Pretrain epoch 109, ZINB loss: nan
+Pretrain epoch 110, ZINB loss: nan
+Pretrain epoch 111, ZINB loss: nan
+Pretrain epoch 112, ZINB loss: nan
+Pretrain epoch 113, ZINB loss: nan
+Pretrain epoch 114, ZINB loss: nan
+Pretrain epoch 115, ZINB loss: nan
+Pretrain epoch 116, ZINB loss: nan
+Pretrain epoch 117, ZINB loss: nan
+Pretrain epoch 118, ZINB loss: nan
+Pretrain epoch 119, ZINB loss: nan
+Pretrain epoch 120, ZINB loss: nan
+Pretrain epoch 121, ZINB loss: nan
+Pretrain epoch 122, ZINB loss: nan
+Pretrain epoch 123, ZINB loss: nan
+Pretrain epoch 124, ZINB loss: nan
+Pretrain epoch 125, ZINB loss: nan
+Pretrain epoch 126, ZINB loss: nan
+Pretrain epoch 127, ZINB loss: nan
+Pretrain epoch 128, ZINB loss: nan
+Pretrain epoch 129, ZINB loss: nan
+Pretrain epoch 130, ZINB loss: nan
+Pretrain epoch 131, ZINB loss: nan
+Pretrain epoch 132, ZINB loss: nan
+Pretrain epoch 133, ZINB loss: nan
+Pretrain epoch 134, ZINB loss: nan
+Pretrain epoch 135, ZINB loss: nan
+Pretrain epoch 136, ZINB loss: nan
+Pretrain epoch 137, ZINB loss: nan
+Pretrain epoch 138, ZINB loss: nan
+Pretrain epoch 139, ZINB loss: nan
+Pretrain epoch 140, ZINB loss: nan
+Pretrain epoch 141, ZINB loss: nan
+Pretrain epoch 142, ZINB loss: nan
+Pretrain epoch 143, ZINB loss: nan
+Pretrain epoch 144, ZINB loss: nan
+Pretrain epoch 145, ZINB loss: nan
+Pretrain epoch 146, ZINB loss: nan
+Pretrain epoch 147, ZINB loss: nan
+Pretrain epoch 148, ZINB loss: nan
+Pretrain epoch 149, ZINB loss: nan
+Pretrain epoch 150, ZINB loss: nan
+Pretrain epoch 151, ZINB loss: nan
+Pretrain epoch 152, ZINB loss: nan
+Pretrain epoch 153, ZINB loss: nan
+Pretrain epoch 154, ZINB loss: nan
+Pretrain epoch 155, ZINB loss: nan
+Pretrain epoch 156, ZINB loss: nan
+Pretrain epoch 157, ZINB loss: nan
+Pretrain epoch 158, ZINB loss: nan
+Pretrain epoch 159, ZINB loss: nan
+Pretrain epoch 160, ZINB loss: nan
+Pretrain epoch 161, ZINB loss: nan
+Pretrain epoch 162, ZINB loss: nan
+Pretrain epoch 163, ZINB loss: nan
+Pretrain epoch 164, ZINB loss: nan
+Pretrain epoch 165, ZINB loss: nan
+Pretrain epoch 166, ZINB loss: nan
+Pretrain epoch 167, ZINB loss: nan
+Pretrain epoch 168, ZINB loss: nan
+Pretrain epoch 169, ZINB loss: nan
+Pretrain epoch 170, ZINB loss: nan
+Pretrain epoch 171, ZINB loss: nan
+Pretrain epoch 172, ZINB loss: nan
+Pretrain epoch 173, ZINB loss: nan
+Pretrain epoch 174, ZINB loss: nan
+Pretrain epoch 175, ZINB loss: nan
+Pretrain epoch 176, ZINB loss: nan
+Pretrain epoch 177, ZINB loss: nan
+Pretrain epoch 178, ZINB loss: nan
+Pretrain epoch 179, ZINB loss: nan
+Pretrain epoch 180, ZINB loss: nan
+Pretrain epoch 181, ZINB loss: nan
+Pretrain epoch 182, ZINB loss: nan
+Pretrain epoch 183, ZINB loss: nan
+Pretrain epoch 184, ZINB loss: nan
+Pretrain epoch 185, ZINB loss: nan
+Pretrain epoch 186, ZINB loss: nan
+Pretrain epoch 187, ZINB loss: nan
+Pretrain epoch 188, ZINB loss: nan
+Pretrain epoch 189, ZINB loss: nan
+Pretrain epoch 190, ZINB loss: nan
+Pretrain epoch 191, ZINB loss: nan
+Pretrain epoch 192, ZINB loss: nan
+Pretrain epoch 193, ZINB loss: nan
+Pretrain epoch 194, ZINB loss: nan
+Pretrain epoch 195, ZINB loss: nan
+Pretrain epoch 196, ZINB loss: nan
+Pretrain epoch 197, ZINB loss: nan
+Pretrain epoch 198, ZINB loss: nan
+Pretrain epoch 199, ZINB loss: nan
+Pretrain epoch 200, ZINB loss: nan
+Pretrain epoch 201, ZINB loss: nan
+Pretrain epoch 202, ZINB loss: nan
+Pretrain epoch 203, ZINB loss: nan
+Pretrain epoch 204, ZINB loss: nan
+Pretrain epoch 205, ZINB loss: nan
+Pretrain epoch 206, ZINB loss: nan
+Pretrain epoch 207, ZINB loss: nan
+Pretrain epoch 208, ZINB loss: nan
+Pretrain epoch 209, ZINB loss: nan
+Pretrain epoch 210, ZINB loss: nan
+Pretrain epoch 211, ZINB loss: nan
+Pretrain epoch 212, ZINB loss: nan
+Pretrain epoch 213, ZINB loss: nan
+Pretrain epoch 214, ZINB loss: nan
+Pretrain epoch 215, ZINB loss: nan
+Pretrain epoch 216, ZINB loss: nan
+Pretrain epoch 217, ZINB loss: nan
+Pretrain epoch 218, ZINB loss: nan
+Pretrain epoch 219, ZINB loss: nan
+Pretrain epoch 220, ZINB loss: nan
+Pretrain epoch 221, ZINB loss: nan
+Pretrain epoch 222, ZINB loss: nan
+Pretrain epoch 223, ZINB loss: nan
+Pretrain epoch 224, ZINB loss: nan
+Pretrain epoch 225, ZINB loss: nan
+Pretrain epoch 226, ZINB loss: nan
+Pretrain epoch 227, ZINB loss: nan
+Pretrain epoch 228, ZINB loss: nan
+Pretrain epoch 229, ZINB loss: nan
+Pretrain epoch 230, ZINB loss: nan
+Pretrain epoch 231, ZINB loss: nan
+Pretrain epoch 232, ZINB loss: nan
+Pretrain epoch 233, ZINB loss: nan
+Pretrain epoch 234, ZINB loss: nan
+Pretrain epoch 235, ZINB loss: nan
+Pretrain epoch 236, ZINB loss: nan
+Pretrain epoch 237, ZINB loss: nan
+Pretrain epoch 238, ZINB loss: nan
+Pretrain epoch 239, ZINB loss: nan
+Pretrain epoch 240, ZINB loss: nan
+Pretrain epoch 241, ZINB loss: nan
+Pretrain epoch 242, ZINB loss: nan
+Pretrain epoch 243, ZINB loss: nan
+Pretrain epoch 244, ZINB loss: nan
+Pretrain epoch 245, ZINB loss: nan
+Pretrain epoch 246, ZINB loss: nan
+Pretrain epoch 247, ZINB loss: nan
+Pretrain epoch 248, ZINB loss: nan
+Pretrain epoch 249, ZINB loss: nan
+Pretrain epoch 250, ZINB loss: nan
+Pretrain epoch 251, ZINB loss: nan
+Pretrain epoch 252, ZINB loss: nan
+Pretrain epoch 253, ZINB loss: nan
+Pretrain epoch 254, ZINB loss: nan
+Pretrain epoch 255, ZINB loss: nan
+Pretrain epoch 256, ZINB loss: nan
+Pretrain epoch 257, ZINB loss: nan
+Pretrain epoch 258, ZINB loss: nan
+Pretrain epoch 259, ZINB loss: nan
+Pretrain epoch 260, ZINB loss: nan
+Pretrain epoch 261, ZINB loss: nan
+Pretrain epoch 262, ZINB loss: nan
+Pretrain epoch 263, ZINB loss: nan
+Pretrain epoch 264, ZINB loss: nan
+Pretrain epoch 265, ZINB loss: nan
+Pretrain epoch 266, ZINB loss: nan
+Pretrain epoch 267, ZINB loss: nan
+Pretrain epoch 268, ZINB loss: nan
+Pretrain epoch 269, ZINB loss: nan
+Pretrain epoch 270, ZINB loss: nan
+Pretrain epoch 271, ZINB loss: nan
+Pretrain epoch 272, ZINB loss: nan
+Pretrain epoch 273, ZINB loss: nan
+Pretrain epoch 274, ZINB loss: nan
+Pretrain epoch 275, ZINB loss: nan
+Pretrain epoch 276, ZINB loss: nan
+Pretrain epoch 277, ZINB loss: nan
+Pretrain epoch 278, ZINB loss: nan
+Pretrain epoch 279, ZINB loss: nan
+Pretrain epoch 280, ZINB loss: nan
+Pretrain epoch 281, ZINB loss: nan
+Pretrain epoch 282, ZINB loss: nan
+Pretrain epoch 283, ZINB loss: nan
+Pretrain epoch 284, ZINB loss: nan
+Pretrain epoch 285, ZINB loss: nan
+Pretrain epoch 286, ZINB loss: nan
+Pretrain epoch 287, ZINB loss: nan
+Pretrain epoch 288, ZINB loss: nan
+Pretrain epoch 289, ZINB loss: nan
+Pretrain epoch 290, ZINB loss: nan
+Pretrain epoch 291, ZINB loss: nan
+Pretrain epoch 292, ZINB loss: nan
+Pretrain epoch 293, ZINB loss: nan
+Pretrain epoch 294, ZINB loss: nan
+Pretrain epoch 295, ZINB loss: nan
+Pretrain epoch 296, ZINB loss: nan
+Pretrain epoch 297, ZINB loss: nan
+Pretrain epoch 298, ZINB loss: nan
+Pretrain epoch 299, ZINB loss: nan
+Pretrain epoch 300, ZINB loss: nan
+Pretraining time: 95 seconds.
+Clustering stage
+Initializing cluster centers with kmeans.
+2 has been completed
+-----------------------
+3 has been submitted!
+The random seed set for torch is seed = 102
+### Autoencoder: Successfully preprocessed 14000 genes and 704 cells.
+Namespace(ae_weight_file='AE_weights.pth.tar', ae_weights=None, batch_size=256, data_file='/home/xyao/scVI/scVI_cell_clustering_HPC/Data/Kolod/Kolod_scVI_input_raw.h5ad', device='cpu', final_latent_file='final_latent_file.txt', gamma=1.0, knn=20, maxiter=2000, n_clusters=3, predict_label_file='/home/xyao/scDeepCluster/Result/Kolod/Batch_3/pred_labels.txt', pretrain_epochs=300, resolution=0.8, save_dir='/home/xyao/scDeepCluster/Result/Kolod/Batch_3', select_genes=0, sigma=2.5, tol=0.001, update_interval=1)
+(704, 14000)
+scDeepCluster(
+  (encoder): Sequential(
+    (0): Linear(in_features=14000, out_features=256, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=256, out_features=64, bias=True)
+    (3): ReLU()
+  )
+  (decoder): Sequential(
+    (0): Linear(in_features=32, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=64, out_features=256, bias=True)
+    (3): ReLU()
+  )
+  (_enc_mu): Linear(in_features=64, out_features=32, bias=True)
+  (_dec_mean): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): MeanAct()
+  )
+  (_dec_disp): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): DispAct()
+  )
+  (_dec_pi): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): Sigmoid()
+  )
+  (zinb_loss): ZINBLoss()
+)
+Pretraining stage
+Pretrain epoch   1, ZINB loss: 143.52456665
+Pretrain epoch   2, ZINB loss: 113.49024686
+Pretrain epoch   3, ZINB loss: 47.84006726
+Pretrain epoch   4, ZINB loss: 8.93314305
+Pretrain epoch   5, ZINB loss: nan
+Pretrain epoch   6, ZINB loss: nan
+Pretrain epoch   7, ZINB loss: nan
+Pretrain epoch   8, ZINB loss: nan
+Pretrain epoch   9, ZINB loss: nan
+Pretrain epoch  10, ZINB loss: nan
+Pretrain epoch  11, ZINB loss: nan
+Pretrain epoch  12, ZINB loss: nan
+Pretrain epoch  13, ZINB loss: nan
+Pretrain epoch  14, ZINB loss: nan
+Pretrain epoch  15, ZINB loss: nan
+Pretrain epoch  16, ZINB loss: nan
+Pretrain epoch  17, ZINB loss: nan
+Pretrain epoch  18, ZINB loss: nan
+Pretrain epoch  19, ZINB loss: nan
+Pretrain epoch  20, ZINB loss: nan
+Pretrain epoch  21, ZINB loss: nan
+Pretrain epoch  22, ZINB loss: nan
+Pretrain epoch  23, ZINB loss: nan
+Pretrain epoch  24, ZINB loss: nan
+Pretrain epoch  25, ZINB loss: nan
+Pretrain epoch  26, ZINB loss: nan
+Pretrain epoch  27, ZINB loss: nan
+Pretrain epoch  28, ZINB loss: nan
+Pretrain epoch  29, ZINB loss: nan
+Pretrain epoch  30, ZINB loss: nan
+Pretrain epoch  31, ZINB loss: nan
+Pretrain epoch  32, ZINB loss: nan
+Pretrain epoch  33, ZINB loss: nan
+Pretrain epoch  34, ZINB loss: nan
+Pretrain epoch  35, ZINB loss: nan
+Pretrain epoch  36, ZINB loss: nan
+Pretrain epoch  37, ZINB loss: nan
+Pretrain epoch  38, ZINB loss: nan
+Pretrain epoch  39, ZINB loss: nan
+Pretrain epoch  40, ZINB loss: nan
+Pretrain epoch  41, ZINB loss: nan
+Pretrain epoch  42, ZINB loss: nan
+Pretrain epoch  43, ZINB loss: nan
+Pretrain epoch  44, ZINB loss: nan
+Pretrain epoch  45, ZINB loss: nan
+Pretrain epoch  46, ZINB loss: nan
+Pretrain epoch  47, ZINB loss: nan
+Pretrain epoch  48, ZINB loss: nan
+Pretrain epoch  49, ZINB loss: nan
+Pretrain epoch  50, ZINB loss: nan
+Pretrain epoch  51, ZINB loss: nan
+Pretrain epoch  52, ZINB loss: nan
+Pretrain epoch  53, ZINB loss: nan
+Pretrain epoch  54, ZINB loss: nan
+Pretrain epoch  55, ZINB loss: nan
+Pretrain epoch  56, ZINB loss: nan
+Pretrain epoch  57, ZINB loss: nan
+Pretrain epoch  58, ZINB loss: nan
+Pretrain epoch  59, ZINB loss: nan
+Pretrain epoch  60, ZINB loss: nan
+Pretrain epoch  61, ZINB loss: nan
+Pretrain epoch  62, ZINB loss: nan
+Pretrain epoch  63, ZINB loss: nan
+Pretrain epoch  64, ZINB loss: nan
+Pretrain epoch  65, ZINB loss: nan
+Pretrain epoch  66, ZINB loss: nan
+Pretrain epoch  67, ZINB loss: nan
+Pretrain epoch  68, ZINB loss: nan
+Pretrain epoch  69, ZINB loss: nan
+Pretrain epoch  70, ZINB loss: nan
+Pretrain epoch  71, ZINB loss: nan
+Pretrain epoch  72, ZINB loss: nan
+Pretrain epoch  73, ZINB loss: nan
+Pretrain epoch  74, ZINB loss: nan
+Pretrain epoch  75, ZINB loss: nan
+Pretrain epoch  76, ZINB loss: nan
+Pretrain epoch  77, ZINB loss: nan
+Pretrain epoch  78, ZINB loss: nan
+Pretrain epoch  79, ZINB loss: nan
+Pretrain epoch  80, ZINB loss: nan
+Pretrain epoch  81, ZINB loss: nan
+Pretrain epoch  82, ZINB loss: nan
+Pretrain epoch  83, ZINB loss: nan
+Pretrain epoch  84, ZINB loss: nan
+Pretrain epoch  85, ZINB loss: nan
+Pretrain epoch  86, ZINB loss: nan
+Pretrain epoch  87, ZINB loss: nan
+Pretrain epoch  88, ZINB loss: nan
+Pretrain epoch  89, ZINB loss: nan
+Pretrain epoch  90, ZINB loss: nan
+Pretrain epoch  91, ZINB loss: nan
+Pretrain epoch  92, ZINB loss: nan
+Pretrain epoch  93, ZINB loss: nan
+Pretrain epoch  94, ZINB loss: nan
+Pretrain epoch  95, ZINB loss: nan
+Pretrain epoch  96, ZINB loss: nan
+Pretrain epoch  97, ZINB loss: nan
+Pretrain epoch  98, ZINB loss: nan
+Pretrain epoch  99, ZINB loss: nan
+Pretrain epoch 100, ZINB loss: nan
+Pretrain epoch 101, ZINB loss: nan
+Pretrain epoch 102, ZINB loss: nan
+Pretrain epoch 103, ZINB loss: nan
+Pretrain epoch 104, ZINB loss: nan
+Pretrain epoch 105, ZINB loss: nan
+Pretrain epoch 106, ZINB loss: nan
+Pretrain epoch 107, ZINB loss: nan
+Pretrain epoch 108, ZINB loss: nan
+Pretrain epoch 109, ZINB loss: nan
+Pretrain epoch 110, ZINB loss: nan
+Pretrain epoch 111, ZINB loss: nan
+Pretrain epoch 112, ZINB loss: nan
+Pretrain epoch 113, ZINB loss: nan
+Pretrain epoch 114, ZINB loss: nan
+Pretrain epoch 115, ZINB loss: nan
+Pretrain epoch 116, ZINB loss: nan
+Pretrain epoch 117, ZINB loss: nan
+Pretrain epoch 118, ZINB loss: nan
+Pretrain epoch 119, ZINB loss: nan
+Pretrain epoch 120, ZINB loss: nan
+Pretrain epoch 121, ZINB loss: nan
+Pretrain epoch 122, ZINB loss: nan
+Pretrain epoch 123, ZINB loss: nan
+Pretrain epoch 124, ZINB loss: nan
+Pretrain epoch 125, ZINB loss: nan
+Pretrain epoch 126, ZINB loss: nan
+Pretrain epoch 127, ZINB loss: nan
+Pretrain epoch 128, ZINB loss: nan
+Pretrain epoch 129, ZINB loss: nan
+Pretrain epoch 130, ZINB loss: nan
+Pretrain epoch 131, ZINB loss: nan
+Pretrain epoch 132, ZINB loss: nan
+Pretrain epoch 133, ZINB loss: nan
+Pretrain epoch 134, ZINB loss: nan
+Pretrain epoch 135, ZINB loss: nan
+Pretrain epoch 136, ZINB loss: nan
+Pretrain epoch 137, ZINB loss: nan
+Pretrain epoch 138, ZINB loss: nan
+Pretrain epoch 139, ZINB loss: nan
+Pretrain epoch 140, ZINB loss: nan
+Pretrain epoch 141, ZINB loss: nan
+Pretrain epoch 142, ZINB loss: nan
+Pretrain epoch 143, ZINB loss: nan
+Pretrain epoch 144, ZINB loss: nan
+Pretrain epoch 145, ZINB loss: nan
+Pretrain epoch 146, ZINB loss: nan
+Pretrain epoch 147, ZINB loss: nan
+Pretrain epoch 148, ZINB loss: nan
+Pretrain epoch 149, ZINB loss: nan
+Pretrain epoch 150, ZINB loss: nan
+Pretrain epoch 151, ZINB loss: nan
+Pretrain epoch 152, ZINB loss: nan
+Pretrain epoch 153, ZINB loss: nan
+Pretrain epoch 154, ZINB loss: nan
+Pretrain epoch 155, ZINB loss: nan
+Pretrain epoch 156, ZINB loss: nan
+Pretrain epoch 157, ZINB loss: nan
+Pretrain epoch 158, ZINB loss: nan
+Pretrain epoch 159, ZINB loss: nan
+Pretrain epoch 160, ZINB loss: nan
+Pretrain epoch 161, ZINB loss: nan
+Pretrain epoch 162, ZINB loss: nan
+Pretrain epoch 163, ZINB loss: nan
+Pretrain epoch 164, ZINB loss: nan
+Pretrain epoch 165, ZINB loss: nan
+Pretrain epoch 166, ZINB loss: nan
+Pretrain epoch 167, ZINB loss: nan
+Pretrain epoch 168, ZINB loss: nan
+Pretrain epoch 169, ZINB loss: nan
+Pretrain epoch 170, ZINB loss: nan
+Pretrain epoch 171, ZINB loss: nan
+Pretrain epoch 172, ZINB loss: nan
+Pretrain epoch 173, ZINB loss: nan
+Pretrain epoch 174, ZINB loss: nan
+Pretrain epoch 175, ZINB loss: nan
+Pretrain epoch 176, ZINB loss: nan
+Pretrain epoch 177, ZINB loss: nan
+Pretrain epoch 178, ZINB loss: nan
+Pretrain epoch 179, ZINB loss: nan
+Pretrain epoch 180, ZINB loss: nan
+Pretrain epoch 181, ZINB loss: nan
+Pretrain epoch 182, ZINB loss: nan
+Pretrain epoch 183, ZINB loss: nan
+Pretrain epoch 184, ZINB loss: nan
+Pretrain epoch 185, ZINB loss: nan
+Pretrain epoch 186, ZINB loss: nan
+Pretrain epoch 187, ZINB loss: nan
+Pretrain epoch 188, ZINB loss: nan
+Pretrain epoch 189, ZINB loss: nan
+Pretrain epoch 190, ZINB loss: nan
+Pretrain epoch 191, ZINB loss: nan
+Pretrain epoch 192, ZINB loss: nan
+Pretrain epoch 193, ZINB loss: nan
+Pretrain epoch 194, ZINB loss: nan
+Pretrain epoch 195, ZINB loss: nan
+Pretrain epoch 196, ZINB loss: nan
+Pretrain epoch 197, ZINB loss: nan
+Pretrain epoch 198, ZINB loss: nan
+Pretrain epoch 199, ZINB loss: nan
+Pretrain epoch 200, ZINB loss: nan
+Pretrain epoch 201, ZINB loss: nan
+Pretrain epoch 202, ZINB loss: nan
+Pretrain epoch 203, ZINB loss: nan
+Pretrain epoch 204, ZINB loss: nan
+Pretrain epoch 205, ZINB loss: nan
+Pretrain epoch 206, ZINB loss: nan
+Pretrain epoch 207, ZINB loss: nan
+Pretrain epoch 208, ZINB loss: nan
+Pretrain epoch 209, ZINB loss: nan
+Pretrain epoch 210, ZINB loss: nan
+Pretrain epoch 211, ZINB loss: nan
+Pretrain epoch 212, ZINB loss: nan
+Pretrain epoch 213, ZINB loss: nan
+Pretrain epoch 214, ZINB loss: nan
+Pretrain epoch 215, ZINB loss: nan
+Pretrain epoch 216, ZINB loss: nan
+Pretrain epoch 217, ZINB loss: nan
+Pretrain epoch 218, ZINB loss: nan
+Pretrain epoch 219, ZINB loss: nan
+Pretrain epoch 220, ZINB loss: nan
+Pretrain epoch 221, ZINB loss: nan
+Pretrain epoch 222, ZINB loss: nan
+Pretrain epoch 223, ZINB loss: nan
+Pretrain epoch 224, ZINB loss: nan
+Pretrain epoch 225, ZINB loss: nan
+Pretrain epoch 226, ZINB loss: nan
+Pretrain epoch 227, ZINB loss: nan
+Pretrain epoch 228, ZINB loss: nan
+Pretrain epoch 229, ZINB loss: nan
+Pretrain epoch 230, ZINB loss: nan
+Pretrain epoch 231, ZINB loss: nan
+Pretrain epoch 232, ZINB loss: nan
+Pretrain epoch 233, ZINB loss: nan
+Pretrain epoch 234, ZINB loss: nan
+Pretrain epoch 235, ZINB loss: nan
+Pretrain epoch 236, ZINB loss: nan
+Pretrain epoch 237, ZINB loss: nan
+Pretrain epoch 238, ZINB loss: nan
+Pretrain epoch 239, ZINB loss: nan
+Pretrain epoch 240, ZINB loss: nan
+Pretrain epoch 241, ZINB loss: nan
+Pretrain epoch 242, ZINB loss: nan
+Pretrain epoch 243, ZINB loss: nan
+Pretrain epoch 244, ZINB loss: nan
+Pretrain epoch 245, ZINB loss: nan
+Pretrain epoch 246, ZINB loss: nan
+Pretrain epoch 247, ZINB loss: nan
+Pretrain epoch 248, ZINB loss: nan
+Pretrain epoch 249, ZINB loss: nan
+Pretrain epoch 250, ZINB loss: nan
+Pretrain epoch 251, ZINB loss: nan
+Pretrain epoch 252, ZINB loss: nan
+Pretrain epoch 253, ZINB loss: nan
+Pretrain epoch 254, ZINB loss: nan
+Pretrain epoch 255, ZINB loss: nan
+Pretrain epoch 256, ZINB loss: nan
+Pretrain epoch 257, ZINB loss: nan
+Pretrain epoch 258, ZINB loss: nan
+Pretrain epoch 259, ZINB loss: nan
+Pretrain epoch 260, ZINB loss: nan
+Pretrain epoch 261, ZINB loss: nan
+Pretrain epoch 262, ZINB loss: nan
+Pretrain epoch 263, ZINB loss: nan
+Pretrain epoch 264, ZINB loss: nan
+Pretrain epoch 265, ZINB loss: nan
+Pretrain epoch 266, ZINB loss: nan
+Pretrain epoch 267, ZINB loss: nan
+Pretrain epoch 268, ZINB loss: nan
+Pretrain epoch 269, ZINB loss: nan
+Pretrain epoch 270, ZINB loss: nan
+Pretrain epoch 271, ZINB loss: nan
+Pretrain epoch 272, ZINB loss: nan
+Pretrain epoch 273, ZINB loss: nan
+Pretrain epoch 274, ZINB loss: nan
+Pretrain epoch 275, ZINB loss: nan
+Pretrain epoch 276, ZINB loss: nan
+Pretrain epoch 277, ZINB loss: nan
+Pretrain epoch 278, ZINB loss: nan
+Pretrain epoch 279, ZINB loss: nan
+Pretrain epoch 280, ZINB loss: nan
+Pretrain epoch 281, ZINB loss: nan
+Pretrain epoch 282, ZINB loss: nan
+Pretrain epoch 283, ZINB loss: nan
+Pretrain epoch 284, ZINB loss: nan
+Pretrain epoch 285, ZINB loss: nan
+Pretrain epoch 286, ZINB loss: nan
+Pretrain epoch 287, ZINB loss: nan
+Pretrain epoch 288, ZINB loss: nan
+Pretrain epoch 289, ZINB loss: nan
+Pretrain epoch 290, ZINB loss: nan
+Pretrain epoch 291, ZINB loss: nan
+Pretrain epoch 292, ZINB loss: nan
+Pretrain epoch 293, ZINB loss: nan
+Pretrain epoch 294, ZINB loss: nan
+Pretrain epoch 295, ZINB loss: nan
+Pretrain epoch 296, ZINB loss: nan
+Pretrain epoch 297, ZINB loss: nan
+Pretrain epoch 298, ZINB loss: nan
+Pretrain epoch 299, ZINB loss: nan
+Pretrain epoch 300, ZINB loss: nan
+Pretraining time: 95 seconds.
+Clustering stage
+Initializing cluster centers with kmeans.
+3 has been completed
+-----------------------
+4 has been submitted!
+The random seed set for torch is seed = 130
+### Autoencoder: Successfully preprocessed 14000 genes and 704 cells.
+Namespace(ae_weight_file='AE_weights.pth.tar', ae_weights=None, batch_size=256, data_file='/home/xyao/scVI/scVI_cell_clustering_HPC/Data/Kolod/Kolod_scVI_input_raw.h5ad', device='cpu', final_latent_file='final_latent_file.txt', gamma=1.0, knn=20, maxiter=2000, n_clusters=3, predict_label_file='/home/xyao/scDeepCluster/Result/Kolod/Batch_4/pred_labels.txt', pretrain_epochs=300, resolution=0.8, save_dir='/home/xyao/scDeepCluster/Result/Kolod/Batch_4', select_genes=0, sigma=2.5, tol=0.001, update_interval=1)
+(704, 14000)
+scDeepCluster(
+  (encoder): Sequential(
+    (0): Linear(in_features=14000, out_features=256, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=256, out_features=64, bias=True)
+    (3): ReLU()
+  )
+  (decoder): Sequential(
+    (0): Linear(in_features=32, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=64, out_features=256, bias=True)
+    (3): ReLU()
+  )
+  (_enc_mu): Linear(in_features=64, out_features=32, bias=True)
+  (_dec_mean): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): MeanAct()
+  )
+  (_dec_disp): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): DispAct()
+  )
+  (_dec_pi): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): Sigmoid()
+  )
+  (zinb_loss): ZINBLoss()
+)
+Pretraining stage
+Pretrain epoch   1, ZINB loss: 143.40752896
+Pretrain epoch   2, ZINB loss: 111.26962003
+Pretrain epoch   3, ZINB loss: 44.09084511
+Pretrain epoch   4, ZINB loss: 9.40836187
+Pretrain epoch   5, ZINB loss: 7.40584889
+Pretrain epoch   6, ZINB loss: nan
+Pretrain epoch   7, ZINB loss: nan
+Pretrain epoch   8, ZINB loss: nan
+Pretrain epoch   9, ZINB loss: nan
+Pretrain epoch  10, ZINB loss: nan
+Pretrain epoch  11, ZINB loss: nan
+Pretrain epoch  12, ZINB loss: nan
+Pretrain epoch  13, ZINB loss: nan
+Pretrain epoch  14, ZINB loss: nan
+Pretrain epoch  15, ZINB loss: nan
+Pretrain epoch  16, ZINB loss: nan
+Pretrain epoch  17, ZINB loss: nan
+Pretrain epoch  18, ZINB loss: nan
+Pretrain epoch  19, ZINB loss: nan
+Pretrain epoch  20, ZINB loss: nan
+Pretrain epoch  21, ZINB loss: nan
+Pretrain epoch  22, ZINB loss: nan
+Pretrain epoch  23, ZINB loss: nan
+Pretrain epoch  24, ZINB loss: nan
+Pretrain epoch  25, ZINB loss: nan
+Pretrain epoch  26, ZINB loss: nan
+Pretrain epoch  27, ZINB loss: nan
+Pretrain epoch  28, ZINB loss: nan
+Pretrain epoch  29, ZINB loss: nan
+Pretrain epoch  30, ZINB loss: nan
+Pretrain epoch  31, ZINB loss: nan
+Pretrain epoch  32, ZINB loss: nan
+Pretrain epoch  33, ZINB loss: nan
+Pretrain epoch  34, ZINB loss: nan
+Pretrain epoch  35, ZINB loss: nan
+Pretrain epoch  36, ZINB loss: nan
+Pretrain epoch  37, ZINB loss: nan
+Pretrain epoch  38, ZINB loss: nan
+Pretrain epoch  39, ZINB loss: nan
+Pretrain epoch  40, ZINB loss: nan
+Pretrain epoch  41, ZINB loss: nan
+Pretrain epoch  42, ZINB loss: nan
+Pretrain epoch  43, ZINB loss: nan
+Pretrain epoch  44, ZINB loss: nan
+Pretrain epoch  45, ZINB loss: nan
+Pretrain epoch  46, ZINB loss: nan
+Pretrain epoch  47, ZINB loss: nan
+Pretrain epoch  48, ZINB loss: nan
+Pretrain epoch  49, ZINB loss: nan
+Pretrain epoch  50, ZINB loss: nan
+Pretrain epoch  51, ZINB loss: nan
+Pretrain epoch  52, ZINB loss: nan
+Pretrain epoch  53, ZINB loss: nan
+Pretrain epoch  54, ZINB loss: nan
+Pretrain epoch  55, ZINB loss: nan
+Pretrain epoch  56, ZINB loss: nan
+Pretrain epoch  57, ZINB loss: nan
+Pretrain epoch  58, ZINB loss: nan
+Pretrain epoch  59, ZINB loss: nan
+Pretrain epoch  60, ZINB loss: nan
+Pretrain epoch  61, ZINB loss: nan
+Pretrain epoch  62, ZINB loss: nan
+Pretrain epoch  63, ZINB loss: nan
+Pretrain epoch  64, ZINB loss: nan
+Pretrain epoch  65, ZINB loss: nan
+Pretrain epoch  66, ZINB loss: nan
+Pretrain epoch  67, ZINB loss: nan
+Pretrain epoch  68, ZINB loss: nan
+Pretrain epoch  69, ZINB loss: nan
+Pretrain epoch  70, ZINB loss: nan
+Pretrain epoch  71, ZINB loss: nan
+Pretrain epoch  72, ZINB loss: nan
+Pretrain epoch  73, ZINB loss: nan
+Pretrain epoch  74, ZINB loss: nan
+Pretrain epoch  75, ZINB loss: nan
+Pretrain epoch  76, ZINB loss: nan
+Pretrain epoch  77, ZINB loss: nan
+Pretrain epoch  78, ZINB loss: nan
+Pretrain epoch  79, ZINB loss: nan
+Pretrain epoch  80, ZINB loss: nan
+Pretrain epoch  81, ZINB loss: nan
+Pretrain epoch  82, ZINB loss: nan
+Pretrain epoch  83, ZINB loss: nan
+Pretrain epoch  84, ZINB loss: nan
+Pretrain epoch  85, ZINB loss: nan
+Pretrain epoch  86, ZINB loss: nan
+Pretrain epoch  87, ZINB loss: nan
+Pretrain epoch  88, ZINB loss: nan
+Pretrain epoch  89, ZINB loss: nan
+Pretrain epoch  90, ZINB loss: nan
+Pretrain epoch  91, ZINB loss: nan
+Pretrain epoch  92, ZINB loss: nan
+Pretrain epoch  93, ZINB loss: nan
+Pretrain epoch  94, ZINB loss: nan
+Pretrain epoch  95, ZINB loss: nan
+Pretrain epoch  96, ZINB loss: nan
+Pretrain epoch  97, ZINB loss: nan
+Pretrain epoch  98, ZINB loss: nan
+Pretrain epoch  99, ZINB loss: nan
+Pretrain epoch 100, ZINB loss: nan
+Pretrain epoch 101, ZINB loss: nan
+Pretrain epoch 102, ZINB loss: nan
+Pretrain epoch 103, ZINB loss: nan
+Pretrain epoch 104, ZINB loss: nan
+Pretrain epoch 105, ZINB loss: nan
+Pretrain epoch 106, ZINB loss: nan
+Pretrain epoch 107, ZINB loss: nan
+Pretrain epoch 108, ZINB loss: nan
+Pretrain epoch 109, ZINB loss: nan
+Pretrain epoch 110, ZINB loss: nan
+Pretrain epoch 111, ZINB loss: nan
+Pretrain epoch 112, ZINB loss: nan
+Pretrain epoch 113, ZINB loss: nan
+Pretrain epoch 114, ZINB loss: nan
+Pretrain epoch 115, ZINB loss: nan
+Pretrain epoch 116, ZINB loss: nan
+Pretrain epoch 117, ZINB loss: nan
+Pretrain epoch 118, ZINB loss: nan
+Pretrain epoch 119, ZINB loss: nan
+Pretrain epoch 120, ZINB loss: nan
+Pretrain epoch 121, ZINB loss: nan
+Pretrain epoch 122, ZINB loss: nan
+Pretrain epoch 123, ZINB loss: nan
+Pretrain epoch 124, ZINB loss: nan
+Pretrain epoch 125, ZINB loss: nan
+Pretrain epoch 126, ZINB loss: nan
+Pretrain epoch 127, ZINB loss: nan
+Pretrain epoch 128, ZINB loss: nan
+Pretrain epoch 129, ZINB loss: nan
+Pretrain epoch 130, ZINB loss: nan
+Pretrain epoch 131, ZINB loss: nan
+Pretrain epoch 132, ZINB loss: nan
+Pretrain epoch 133, ZINB loss: nan
+Pretrain epoch 134, ZINB loss: nan
+Pretrain epoch 135, ZINB loss: nan
+Pretrain epoch 136, ZINB loss: nan
+Pretrain epoch 137, ZINB loss: nan
+Pretrain epoch 138, ZINB loss: nan
+Pretrain epoch 139, ZINB loss: nan
+Pretrain epoch 140, ZINB loss: nan
+Pretrain epoch 141, ZINB loss: nan
+Pretrain epoch 142, ZINB loss: nan
+Pretrain epoch 143, ZINB loss: nan
+Pretrain epoch 144, ZINB loss: nan
+Pretrain epoch 145, ZINB loss: nan
+Pretrain epoch 146, ZINB loss: nan
+Pretrain epoch 147, ZINB loss: nan
+Pretrain epoch 148, ZINB loss: nan
+Pretrain epoch 149, ZINB loss: nan
+Pretrain epoch 150, ZINB loss: nan
+Pretrain epoch 151, ZINB loss: nan
+Pretrain epoch 152, ZINB loss: nan
+Pretrain epoch 153, ZINB loss: nan
+Pretrain epoch 154, ZINB loss: nan
+Pretrain epoch 155, ZINB loss: nan
+Pretrain epoch 156, ZINB loss: nan
+Pretrain epoch 157, ZINB loss: nan
+Pretrain epoch 158, ZINB loss: nan
+Pretrain epoch 159, ZINB loss: nan
+Pretrain epoch 160, ZINB loss: nan
+Pretrain epoch 161, ZINB loss: nan
+Pretrain epoch 162, ZINB loss: nan
+Pretrain epoch 163, ZINB loss: nan
+Pretrain epoch 164, ZINB loss: nan
+Pretrain epoch 165, ZINB loss: nan
+Pretrain epoch 166, ZINB loss: nan
+Pretrain epoch 167, ZINB loss: nan
+Pretrain epoch 168, ZINB loss: nan
+Pretrain epoch 169, ZINB loss: nan
+Pretrain epoch 170, ZINB loss: nan
+Pretrain epoch 171, ZINB loss: nan
+Pretrain epoch 172, ZINB loss: nan
+Pretrain epoch 173, ZINB loss: nan
+Pretrain epoch 174, ZINB loss: nan
+Pretrain epoch 175, ZINB loss: nan
+Pretrain epoch 176, ZINB loss: nan
+Pretrain epoch 177, ZINB loss: nan
+Pretrain epoch 178, ZINB loss: nan
+Pretrain epoch 179, ZINB loss: nan
+Pretrain epoch 180, ZINB loss: nan
+Pretrain epoch 181, ZINB loss: nan
+Pretrain epoch 182, ZINB loss: nan
+Pretrain epoch 183, ZINB loss: nan
+Pretrain epoch 184, ZINB loss: nan
+Pretrain epoch 185, ZINB loss: nan
+Pretrain epoch 186, ZINB loss: nan
+Pretrain epoch 187, ZINB loss: nan
+Pretrain epoch 188, ZINB loss: nan
+Pretrain epoch 189, ZINB loss: nan
+Pretrain epoch 190, ZINB loss: nan
+Pretrain epoch 191, ZINB loss: nan
+Pretrain epoch 192, ZINB loss: nan
+Pretrain epoch 193, ZINB loss: nan
+Pretrain epoch 194, ZINB loss: nan
+Pretrain epoch 195, ZINB loss: nan
+Pretrain epoch 196, ZINB loss: nan
+Pretrain epoch 197, ZINB loss: nan
+Pretrain epoch 198, ZINB loss: nan
+Pretrain epoch 199, ZINB loss: nan
+Pretrain epoch 200, ZINB loss: nan
+Pretrain epoch 201, ZINB loss: nan
+Pretrain epoch 202, ZINB loss: nan
+Pretrain epoch 203, ZINB loss: nan
+Pretrain epoch 204, ZINB loss: nan
+Pretrain epoch 205, ZINB loss: nan
+Pretrain epoch 206, ZINB loss: nan
+Pretrain epoch 207, ZINB loss: nan
+Pretrain epoch 208, ZINB loss: nan
+Pretrain epoch 209, ZINB loss: nan
+Pretrain epoch 210, ZINB loss: nan
+Pretrain epoch 211, ZINB loss: nan
+Pretrain epoch 212, ZINB loss: nan
+Pretrain epoch 213, ZINB loss: nan
+Pretrain epoch 214, ZINB loss: nan
+Pretrain epoch 215, ZINB loss: nan
+Pretrain epoch 216, ZINB loss: nan
+Pretrain epoch 217, ZINB loss: nan
+Pretrain epoch 218, ZINB loss: nan
+Pretrain epoch 219, ZINB loss: nan
+Pretrain epoch 220, ZINB loss: nan
+Pretrain epoch 221, ZINB loss: nan
+Pretrain epoch 222, ZINB loss: nan
+Pretrain epoch 223, ZINB loss: nan
+Pretrain epoch 224, ZINB loss: nan
+Pretrain epoch 225, ZINB loss: nan
+Pretrain epoch 226, ZINB loss: nan
+Pretrain epoch 227, ZINB loss: nan
+Pretrain epoch 228, ZINB loss: nan
+Pretrain epoch 229, ZINB loss: nan
+Pretrain epoch 230, ZINB loss: nan
+Pretrain epoch 231, ZINB loss: nan
+Pretrain epoch 232, ZINB loss: nan
+Pretrain epoch 233, ZINB loss: nan
+Pretrain epoch 234, ZINB loss: nan
+Pretrain epoch 235, ZINB loss: nan
+Pretrain epoch 236, ZINB loss: nan
+Pretrain epoch 237, ZINB loss: nan
+Pretrain epoch 238, ZINB loss: nan
+Pretrain epoch 239, ZINB loss: nan
+Pretrain epoch 240, ZINB loss: nan
+Pretrain epoch 241, ZINB loss: nan
+Pretrain epoch 242, ZINB loss: nan
+Pretrain epoch 243, ZINB loss: nan
+Pretrain epoch 244, ZINB loss: nan
+Pretrain epoch 245, ZINB loss: nan
+Pretrain epoch 246, ZINB loss: nan
+Pretrain epoch 247, ZINB loss: nan
+Pretrain epoch 248, ZINB loss: nan
+Pretrain epoch 249, ZINB loss: nan
+Pretrain epoch 250, ZINB loss: nan
+Pretrain epoch 251, ZINB loss: nan
+Pretrain epoch 252, ZINB loss: nan
+Pretrain epoch 253, ZINB loss: nan
+Pretrain epoch 254, ZINB loss: nan
+Pretrain epoch 255, ZINB loss: nan
+Pretrain epoch 256, ZINB loss: nan
+Pretrain epoch 257, ZINB loss: nan
+Pretrain epoch 258, ZINB loss: nan
+Pretrain epoch 259, ZINB loss: nan
+Pretrain epoch 260, ZINB loss: nan
+Pretrain epoch 261, ZINB loss: nan
+Pretrain epoch 262, ZINB loss: nan
+Pretrain epoch 263, ZINB loss: nan
+Pretrain epoch 264, ZINB loss: nan
+Pretrain epoch 265, ZINB loss: nan
+Pretrain epoch 266, ZINB loss: nan
+Pretrain epoch 267, ZINB loss: nan
+Pretrain epoch 268, ZINB loss: nan
+Pretrain epoch 269, ZINB loss: nan
+Pretrain epoch 270, ZINB loss: nan
+Pretrain epoch 271, ZINB loss: nan
+Pretrain epoch 272, ZINB loss: nan
+Pretrain epoch 273, ZINB loss: nan
+Pretrain epoch 274, ZINB loss: nan
+Pretrain epoch 275, ZINB loss: nan
+Pretrain epoch 276, ZINB loss: nan
+Pretrain epoch 277, ZINB loss: nan
+Pretrain epoch 278, ZINB loss: nan
+Pretrain epoch 279, ZINB loss: nan
+Pretrain epoch 280, ZINB loss: nan
+Pretrain epoch 281, ZINB loss: nan
+Pretrain epoch 282, ZINB loss: nan
+Pretrain epoch 283, ZINB loss: nan
+Pretrain epoch 284, ZINB loss: nan
+Pretrain epoch 285, ZINB loss: nan
+Pretrain epoch 286, ZINB loss: nan
+Pretrain epoch 287, ZINB loss: nan
+Pretrain epoch 288, ZINB loss: nan
+Pretrain epoch 289, ZINB loss: nan
+Pretrain epoch 290, ZINB loss: nan
+Pretrain epoch 291, ZINB loss: nan
+Pretrain epoch 292, ZINB loss: nan
+Pretrain epoch 293, ZINB loss: nan
+Pretrain epoch 294, ZINB loss: nan
+Pretrain epoch 295, ZINB loss: nan
+Pretrain epoch 296, ZINB loss: nan
+Pretrain epoch 297, ZINB loss: nan
+Pretrain epoch 298, ZINB loss: nan
+Pretrain epoch 299, ZINB loss: nan
+Pretrain epoch 300, ZINB loss: nan
+Pretraining time: 95 seconds.
+Clustering stage
+Initializing cluster centers with kmeans.
+4 has been completed
+-----------------------
+5 has been submitted!
+The random seed set for torch is seed = 878
+### Autoencoder: Successfully preprocessed 14000 genes and 704 cells.
+Namespace(ae_weight_file='AE_weights.pth.tar', ae_weights=None, batch_size=256, data_file='/home/xyao/scVI/scVI_cell_clustering_HPC/Data/Kolod/Kolod_scVI_input_raw.h5ad', device='cpu', final_latent_file='final_latent_file.txt', gamma=1.0, knn=20, maxiter=2000, n_clusters=3, predict_label_file='/home/xyao/scDeepCluster/Result/Kolod/Batch_5/pred_labels.txt', pretrain_epochs=300, resolution=0.8, save_dir='/home/xyao/scDeepCluster/Result/Kolod/Batch_5', select_genes=0, sigma=2.5, tol=0.001, update_interval=1)
+(704, 14000)
+scDeepCluster(
+  (encoder): Sequential(
+    (0): Linear(in_features=14000, out_features=256, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=256, out_features=64, bias=True)
+    (3): ReLU()
+  )
+  (decoder): Sequential(
+    (0): Linear(in_features=32, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=64, out_features=256, bias=True)
+    (3): ReLU()
+  )
+  (_enc_mu): Linear(in_features=64, out_features=32, bias=True)
+  (_dec_mean): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): MeanAct()
+  )
+  (_dec_disp): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): DispAct()
+  )
+  (_dec_pi): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): Sigmoid()
+  )
+  (zinb_loss): ZINBLoss()
+)
+Pretraining stage
+Pretrain epoch   1, ZINB loss: 142.76580117
+Pretrain epoch   2, ZINB loss: 105.53961182
+Pretrain epoch   3, ZINB loss: 37.60620984
+Pretrain epoch   4, ZINB loss: 7.89465258
+Pretrain epoch   5, ZINB loss: 7.51902394
+Pretrain epoch   6, ZINB loss: nan
+Pretrain epoch   7, ZINB loss: nan
+Pretrain epoch   8, ZINB loss: nan
+Pretrain epoch   9, ZINB loss: nan
+Pretrain epoch  10, ZINB loss: nan
+Pretrain epoch  11, ZINB loss: nan
+Pretrain epoch  12, ZINB loss: nan
+Pretrain epoch  13, ZINB loss: nan
+Pretrain epoch  14, ZINB loss: nan
+Pretrain epoch  15, ZINB loss: nan
+Pretrain epoch  16, ZINB loss: nan
+Pretrain epoch  17, ZINB loss: nan
+Pretrain epoch  18, ZINB loss: nan
+Pretrain epoch  19, ZINB loss: nan
+Pretrain epoch  20, ZINB loss: nan
+Pretrain epoch  21, ZINB loss: nan
+Pretrain epoch  22, ZINB loss: nan
+Pretrain epoch  23, ZINB loss: nan
+Pretrain epoch  24, ZINB loss: nan
+Pretrain epoch  25, ZINB loss: nan
+Pretrain epoch  26, ZINB loss: nan
+Pretrain epoch  27, ZINB loss: nan
+Pretrain epoch  28, ZINB loss: nan
+Pretrain epoch  29, ZINB loss: nan
+Pretrain epoch  30, ZINB loss: nan
+Pretrain epoch  31, ZINB loss: nan
+Pretrain epoch  32, ZINB loss: nan
+Pretrain epoch  33, ZINB loss: nan
+Pretrain epoch  34, ZINB loss: nan
+Pretrain epoch  35, ZINB loss: nan
+Pretrain epoch  36, ZINB loss: nan
+Pretrain epoch  37, ZINB loss: nan
+Pretrain epoch  38, ZINB loss: nan
+Pretrain epoch  39, ZINB loss: nan
+Pretrain epoch  40, ZINB loss: nan
+Pretrain epoch  41, ZINB loss: nan
+Pretrain epoch  42, ZINB loss: nan
+Pretrain epoch  43, ZINB loss: nan
+Pretrain epoch  44, ZINB loss: nan
+Pretrain epoch  45, ZINB loss: nan
+Pretrain epoch  46, ZINB loss: nan
+Pretrain epoch  47, ZINB loss: nan
+Pretrain epoch  48, ZINB loss: nan
+Pretrain epoch  49, ZINB loss: nan
+Pretrain epoch  50, ZINB loss: nan
+Pretrain epoch  51, ZINB loss: nan
+Pretrain epoch  52, ZINB loss: nan
+Pretrain epoch  53, ZINB loss: nan
+Pretrain epoch  54, ZINB loss: nan
+Pretrain epoch  55, ZINB loss: nan
+Pretrain epoch  56, ZINB loss: nan
+Pretrain epoch  57, ZINB loss: nan
+Pretrain epoch  58, ZINB loss: nan
+Pretrain epoch  59, ZINB loss: nan
+Pretrain epoch  60, ZINB loss: nan
+Pretrain epoch  61, ZINB loss: nan
+Pretrain epoch  62, ZINB loss: nan
+Pretrain epoch  63, ZINB loss: nan
+Pretrain epoch  64, ZINB loss: nan
+Pretrain epoch  65, ZINB loss: nan
+Pretrain epoch  66, ZINB loss: nan
+Pretrain epoch  67, ZINB loss: nan
+Pretrain epoch  68, ZINB loss: nan
+Pretrain epoch  69, ZINB loss: nan
+Pretrain epoch  70, ZINB loss: nan
+Pretrain epoch  71, ZINB loss: nan
+Pretrain epoch  72, ZINB loss: nan
+Pretrain epoch  73, ZINB loss: nan
+Pretrain epoch  74, ZINB loss: nan
+Pretrain epoch  75, ZINB loss: nan
+Pretrain epoch  76, ZINB loss: nan
+Pretrain epoch  77, ZINB loss: nan
+Pretrain epoch  78, ZINB loss: nan
+Pretrain epoch  79, ZINB loss: nan
+Pretrain epoch  80, ZINB loss: nan
+Pretrain epoch  81, ZINB loss: nan
+Pretrain epoch  82, ZINB loss: nan
+Pretrain epoch  83, ZINB loss: nan
+Pretrain epoch  84, ZINB loss: nan
+Pretrain epoch  85, ZINB loss: nan
+Pretrain epoch  86, ZINB loss: nan
+Pretrain epoch  87, ZINB loss: nan
+Pretrain epoch  88, ZINB loss: nan
+Pretrain epoch  89, ZINB loss: nan
+Pretrain epoch  90, ZINB loss: nan
+Pretrain epoch  91, ZINB loss: nan
+Pretrain epoch  92, ZINB loss: nan
+Pretrain epoch  93, ZINB loss: nan
+Pretrain epoch  94, ZINB loss: nan
+Pretrain epoch  95, ZINB loss: nan
+Pretrain epoch  96, ZINB loss: nan
+Pretrain epoch  97, ZINB loss: nan
+Pretrain epoch  98, ZINB loss: nan
+Pretrain epoch  99, ZINB loss: nan
+Pretrain epoch 100, ZINB loss: nan
+Pretrain epoch 101, ZINB loss: nan
+Pretrain epoch 102, ZINB loss: nan
+Pretrain epoch 103, ZINB loss: nan
+Pretrain epoch 104, ZINB loss: nan
+Pretrain epoch 105, ZINB loss: nan
+Pretrain epoch 106, ZINB loss: nan
+Pretrain epoch 107, ZINB loss: nan
+Pretrain epoch 108, ZINB loss: nan
+Pretrain epoch 109, ZINB loss: nan
+Pretrain epoch 110, ZINB loss: nan
+Pretrain epoch 111, ZINB loss: nan
+Pretrain epoch 112, ZINB loss: nan
+Pretrain epoch 113, ZINB loss: nan
+Pretrain epoch 114, ZINB loss: nan
+Pretrain epoch 115, ZINB loss: nan
+Pretrain epoch 116, ZINB loss: nan
+Pretrain epoch 117, ZINB loss: nan
+Pretrain epoch 118, ZINB loss: nan
+Pretrain epoch 119, ZINB loss: nan
+Pretrain epoch 120, ZINB loss: nan
+Pretrain epoch 121, ZINB loss: nan
+Pretrain epoch 122, ZINB loss: nan
+Pretrain epoch 123, ZINB loss: nan
+Pretrain epoch 124, ZINB loss: nan
+Pretrain epoch 125, ZINB loss: nan
+Pretrain epoch 126, ZINB loss: nan
+Pretrain epoch 127, ZINB loss: nan
+Pretrain epoch 128, ZINB loss: nan
+Pretrain epoch 129, ZINB loss: nan
+Pretrain epoch 130, ZINB loss: nan
+Pretrain epoch 131, ZINB loss: nan
+Pretrain epoch 132, ZINB loss: nan
+Pretrain epoch 133, ZINB loss: nan
+Pretrain epoch 134, ZINB loss: nan
+Pretrain epoch 135, ZINB loss: nan
+Pretrain epoch 136, ZINB loss: nan
+Pretrain epoch 137, ZINB loss: nan
+Pretrain epoch 138, ZINB loss: nan
+Pretrain epoch 139, ZINB loss: nan
+Pretrain epoch 140, ZINB loss: nan
+Pretrain epoch 141, ZINB loss: nan
+Pretrain epoch 142, ZINB loss: nan
+Pretrain epoch 143, ZINB loss: nan
+Pretrain epoch 144, ZINB loss: nan
+Pretrain epoch 145, ZINB loss: nan
+Pretrain epoch 146, ZINB loss: nan
+Pretrain epoch 147, ZINB loss: nan
+Pretrain epoch 148, ZINB loss: nan
+Pretrain epoch 149, ZINB loss: nan
+Pretrain epoch 150, ZINB loss: nan
+Pretrain epoch 151, ZINB loss: nan
+Pretrain epoch 152, ZINB loss: nan
+Pretrain epoch 153, ZINB loss: nan
+Pretrain epoch 154, ZINB loss: nan
+Pretrain epoch 155, ZINB loss: nan
+Pretrain epoch 156, ZINB loss: nan
+Pretrain epoch 157, ZINB loss: nan
+Pretrain epoch 158, ZINB loss: nan
+Pretrain epoch 159, ZINB loss: nan
+Pretrain epoch 160, ZINB loss: nan
+Pretrain epoch 161, ZINB loss: nan
+Pretrain epoch 162, ZINB loss: nan
+Pretrain epoch 163, ZINB loss: nan
+Pretrain epoch 164, ZINB loss: nan
+Pretrain epoch 165, ZINB loss: nan
+Pretrain epoch 166, ZINB loss: nan
+Pretrain epoch 167, ZINB loss: nan
+Pretrain epoch 168, ZINB loss: nan
+Pretrain epoch 169, ZINB loss: nan
+Pretrain epoch 170, ZINB loss: nan
+Pretrain epoch 171, ZINB loss: nan
+Pretrain epoch 172, ZINB loss: nan
+Pretrain epoch 173, ZINB loss: nan
+Pretrain epoch 174, ZINB loss: nan
+Pretrain epoch 175, ZINB loss: nan
+Pretrain epoch 176, ZINB loss: nan
+Pretrain epoch 177, ZINB loss: nan
+Pretrain epoch 178, ZINB loss: nan
+Pretrain epoch 179, ZINB loss: nan
+Pretrain epoch 180, ZINB loss: nan
+Pretrain epoch 181, ZINB loss: nan
+Pretrain epoch 182, ZINB loss: nan
+Pretrain epoch 183, ZINB loss: nan
+Pretrain epoch 184, ZINB loss: nan
+Pretrain epoch 185, ZINB loss: nan
+Pretrain epoch 186, ZINB loss: nan
+Pretrain epoch 187, ZINB loss: nan
+Pretrain epoch 188, ZINB loss: nan
+Pretrain epoch 189, ZINB loss: nan
+Pretrain epoch 190, ZINB loss: nan
+Pretrain epoch 191, ZINB loss: nan
+Pretrain epoch 192, ZINB loss: nan
+Pretrain epoch 193, ZINB loss: nan
+Pretrain epoch 194, ZINB loss: nan
+Pretrain epoch 195, ZINB loss: nan
+Pretrain epoch 196, ZINB loss: nan
+Pretrain epoch 197, ZINB loss: nan
+Pretrain epoch 198, ZINB loss: nan
+Pretrain epoch 199, ZINB loss: nan
+Pretrain epoch 200, ZINB loss: nan
+Pretrain epoch 201, ZINB loss: nan
+Pretrain epoch 202, ZINB loss: nan
+Pretrain epoch 203, ZINB loss: nan
+Pretrain epoch 204, ZINB loss: nan
+Pretrain epoch 205, ZINB loss: nan
+Pretrain epoch 206, ZINB loss: nan
+Pretrain epoch 207, ZINB loss: nan
+Pretrain epoch 208, ZINB loss: nan
+Pretrain epoch 209, ZINB loss: nan
+Pretrain epoch 210, ZINB loss: nan
+Pretrain epoch 211, ZINB loss: nan
+Pretrain epoch 212, ZINB loss: nan
+Pretrain epoch 213, ZINB loss: nan
+Pretrain epoch 214, ZINB loss: nan
+Pretrain epoch 215, ZINB loss: nan
+Pretrain epoch 216, ZINB loss: nan
+Pretrain epoch 217, ZINB loss: nan
+Pretrain epoch 218, ZINB loss: nan
+Pretrain epoch 219, ZINB loss: nan
+Pretrain epoch 220, ZINB loss: nan
+Pretrain epoch 221, ZINB loss: nan
+Pretrain epoch 222, ZINB loss: nan
+Pretrain epoch 223, ZINB loss: nan
+Pretrain epoch 224, ZINB loss: nan
+Pretrain epoch 225, ZINB loss: nan
+Pretrain epoch 226, ZINB loss: nan
+Pretrain epoch 227, ZINB loss: nan
+Pretrain epoch 228, ZINB loss: nan
+Pretrain epoch 229, ZINB loss: nan
+Pretrain epoch 230, ZINB loss: nan
+Pretrain epoch 231, ZINB loss: nan
+Pretrain epoch 232, ZINB loss: nan
+Pretrain epoch 233, ZINB loss: nan
+Pretrain epoch 234, ZINB loss: nan
+Pretrain epoch 235, ZINB loss: nan
+Pretrain epoch 236, ZINB loss: nan
+Pretrain epoch 237, ZINB loss: nan
+Pretrain epoch 238, ZINB loss: nan
+Pretrain epoch 239, ZINB loss: nan
+Pretrain epoch 240, ZINB loss: nan
+Pretrain epoch 241, ZINB loss: nan
+Pretrain epoch 242, ZINB loss: nan
+Pretrain epoch 243, ZINB loss: nan
+Pretrain epoch 244, ZINB loss: nan
+Pretrain epoch 245, ZINB loss: nan
+Pretrain epoch 246, ZINB loss: nan
+Pretrain epoch 247, ZINB loss: nan
+Pretrain epoch 248, ZINB loss: nan
+Pretrain epoch 249, ZINB loss: nan
+Pretrain epoch 250, ZINB loss: nan
+Pretrain epoch 251, ZINB loss: nan
+Pretrain epoch 252, ZINB loss: nan
+Pretrain epoch 253, ZINB loss: nan
+Pretrain epoch 254, ZINB loss: nan
+Pretrain epoch 255, ZINB loss: nan
+Pretrain epoch 256, ZINB loss: nan
+Pretrain epoch 257, ZINB loss: nan
+Pretrain epoch 258, ZINB loss: nan
+Pretrain epoch 259, ZINB loss: nan
+Pretrain epoch 260, ZINB loss: nan
+Pretrain epoch 261, ZINB loss: nan
+Pretrain epoch 262, ZINB loss: nan
+Pretrain epoch 263, ZINB loss: nan
+Pretrain epoch 264, ZINB loss: nan
+Pretrain epoch 265, ZINB loss: nan
+Pretrain epoch 266, ZINB loss: nan
+Pretrain epoch 267, ZINB loss: nan
+Pretrain epoch 268, ZINB loss: nan
+Pretrain epoch 269, ZINB loss: nan
+Pretrain epoch 270, ZINB loss: nan
+Pretrain epoch 271, ZINB loss: nan
+Pretrain epoch 272, ZINB loss: nan
+Pretrain epoch 273, ZINB loss: nan
+Pretrain epoch 274, ZINB loss: nan
+Pretrain epoch 275, ZINB loss: nan
+Pretrain epoch 276, ZINB loss: nan
+Pretrain epoch 277, ZINB loss: nan
+Pretrain epoch 278, ZINB loss: nan
+Pretrain epoch 279, ZINB loss: nan
+Pretrain epoch 280, ZINB loss: nan
+Pretrain epoch 281, ZINB loss: nan
+Pretrain epoch 282, ZINB loss: nan
+Pretrain epoch 283, ZINB loss: nan
+Pretrain epoch 284, ZINB loss: nan
+Pretrain epoch 285, ZINB loss: nan
+Pretrain epoch 286, ZINB loss: nan
+Pretrain epoch 287, ZINB loss: nan
+Pretrain epoch 288, ZINB loss: nan
+Pretrain epoch 289, ZINB loss: nan
+Pretrain epoch 290, ZINB loss: nan
+Pretrain epoch 291, ZINB loss: nan
+Pretrain epoch 292, ZINB loss: nan
+Pretrain epoch 293, ZINB loss: nan
+Pretrain epoch 294, ZINB loss: nan
+Pretrain epoch 295, ZINB loss: nan
+Pretrain epoch 296, ZINB loss: nan
+Pretrain epoch 297, ZINB loss: nan
+Pretrain epoch 298, ZINB loss: nan
+Pretrain epoch 299, ZINB loss: nan
+Pretrain epoch 300, ZINB loss: nan
+Pretraining time: 95 seconds.
+Clustering stage
+Initializing cluster centers with kmeans.
+5 has been completed
+-----------------------
+6 has been submitted!
+The random seed set for torch is seed = 657
+### Autoencoder: Successfully preprocessed 14000 genes and 704 cells.
+Namespace(ae_weight_file='AE_weights.pth.tar', ae_weights=None, batch_size=256, data_file='/home/xyao/scVI/scVI_cell_clustering_HPC/Data/Kolod/Kolod_scVI_input_raw.h5ad', device='cpu', final_latent_file='final_latent_file.txt', gamma=1.0, knn=20, maxiter=2000, n_clusters=3, predict_label_file='/home/xyao/scDeepCluster/Result/Kolod/Batch_6/pred_labels.txt', pretrain_epochs=300, resolution=0.8, save_dir='/home/xyao/scDeepCluster/Result/Kolod/Batch_6', select_genes=0, sigma=2.5, tol=0.001, update_interval=1)
+(704, 14000)
+scDeepCluster(
+  (encoder): Sequential(
+    (0): Linear(in_features=14000, out_features=256, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=256, out_features=64, bias=True)
+    (3): ReLU()
+  )
+  (decoder): Sequential(
+    (0): Linear(in_features=32, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=64, out_features=256, bias=True)
+    (3): ReLU()
+  )
+  (_enc_mu): Linear(in_features=64, out_features=32, bias=True)
+  (_dec_mean): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): MeanAct()
+  )
+  (_dec_disp): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): DispAct()
+  )
+  (_dec_pi): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): Sigmoid()
+  )
+  (zinb_loss): ZINBLoss()
+)
+Pretraining stage
+Pretrain epoch   1, ZINB loss: 144.08784624
+Pretrain epoch   2, ZINB loss: 112.17919853
+Pretrain epoch   3, ZINB loss: 41.43923291
+Pretrain epoch   4, ZINB loss: 8.36562356
+Pretrain epoch   5, ZINB loss: 7.61952474
+Pretrain epoch   6, ZINB loss: nan
+Pretrain epoch   7, ZINB loss: nan
+Pretrain epoch   8, ZINB loss: nan
+Pretrain epoch   9, ZINB loss: nan
+Pretrain epoch  10, ZINB loss: nan
+Pretrain epoch  11, ZINB loss: nan
+Pretrain epoch  12, ZINB loss: nan
+Pretrain epoch  13, ZINB loss: nan
+Pretrain epoch  14, ZINB loss: nan
+Pretrain epoch  15, ZINB loss: nan
+Pretrain epoch  16, ZINB loss: nan
+Pretrain epoch  17, ZINB loss: nan
+Pretrain epoch  18, ZINB loss: nan
+Pretrain epoch  19, ZINB loss: nan
+Pretrain epoch  20, ZINB loss: nan
+Pretrain epoch  21, ZINB loss: nan
+Pretrain epoch  22, ZINB loss: nan
+Pretrain epoch  23, ZINB loss: nan
+Pretrain epoch  24, ZINB loss: nan
+Pretrain epoch  25, ZINB loss: nan
+Pretrain epoch  26, ZINB loss: nan
+Pretrain epoch  27, ZINB loss: nan
+Pretrain epoch  28, ZINB loss: nan
+Pretrain epoch  29, ZINB loss: nan
+Pretrain epoch  30, ZINB loss: nan
+Pretrain epoch  31, ZINB loss: nan
+Pretrain epoch  32, ZINB loss: nan
+Pretrain epoch  33, ZINB loss: nan
+Pretrain epoch  34, ZINB loss: nan
+Pretrain epoch  35, ZINB loss: nan
+Pretrain epoch  36, ZINB loss: nan
+Pretrain epoch  37, ZINB loss: nan
+Pretrain epoch  38, ZINB loss: nan
+Pretrain epoch  39, ZINB loss: nan
+Pretrain epoch  40, ZINB loss: nan
+Pretrain epoch  41, ZINB loss: nan
+Pretrain epoch  42, ZINB loss: nan
+Pretrain epoch  43, ZINB loss: nan
+Pretrain epoch  44, ZINB loss: nan
+Pretrain epoch  45, ZINB loss: nan
+Pretrain epoch  46, ZINB loss: nan
+Pretrain epoch  47, ZINB loss: nan
+Pretrain epoch  48, ZINB loss: nan
+Pretrain epoch  49, ZINB loss: nan
+Pretrain epoch  50, ZINB loss: nan
+Pretrain epoch  51, ZINB loss: nan
+Pretrain epoch  52, ZINB loss: nan
+Pretrain epoch  53, ZINB loss: nan
+Pretrain epoch  54, ZINB loss: nan
+Pretrain epoch  55, ZINB loss: nan
+Pretrain epoch  56, ZINB loss: nan
+Pretrain epoch  57, ZINB loss: nan
+Pretrain epoch  58, ZINB loss: nan
+Pretrain epoch  59, ZINB loss: nan
+Pretrain epoch  60, ZINB loss: nan
+Pretrain epoch  61, ZINB loss: nan
+Pretrain epoch  62, ZINB loss: nan
+Pretrain epoch  63, ZINB loss: nan
+Pretrain epoch  64, ZINB loss: nan
+Pretrain epoch  65, ZINB loss: nan
+Pretrain epoch  66, ZINB loss: nan
+Pretrain epoch  67, ZINB loss: nan
+Pretrain epoch  68, ZINB loss: nan
+Pretrain epoch  69, ZINB loss: nan
+Pretrain epoch  70, ZINB loss: nan
+Pretrain epoch  71, ZINB loss: nan
+Pretrain epoch  72, ZINB loss: nan
+Pretrain epoch  73, ZINB loss: nan
+Pretrain epoch  74, ZINB loss: nan
+Pretrain epoch  75, ZINB loss: nan
+Pretrain epoch  76, ZINB loss: nan
+Pretrain epoch  77, ZINB loss: nan
+Pretrain epoch  78, ZINB loss: nan
+Pretrain epoch  79, ZINB loss: nan
+Pretrain epoch  80, ZINB loss: nan
+Pretrain epoch  81, ZINB loss: nan
+Pretrain epoch  82, ZINB loss: nan
+Pretrain epoch  83, ZINB loss: nan
+Pretrain epoch  84, ZINB loss: nan
+Pretrain epoch  85, ZINB loss: nan
+Pretrain epoch  86, ZINB loss: nan
+Pretrain epoch  87, ZINB loss: nan
+Pretrain epoch  88, ZINB loss: nan
+Pretrain epoch  89, ZINB loss: nan
+Pretrain epoch  90, ZINB loss: nan
+Pretrain epoch  91, ZINB loss: nan
+Pretrain epoch  92, ZINB loss: nan
+Pretrain epoch  93, ZINB loss: nan
+Pretrain epoch  94, ZINB loss: nan
+Pretrain epoch  95, ZINB loss: nan
+Pretrain epoch  96, ZINB loss: nan
+Pretrain epoch  97, ZINB loss: nan
+Pretrain epoch  98, ZINB loss: nan
+Pretrain epoch  99, ZINB loss: nan
+Pretrain epoch 100, ZINB loss: nan
+Pretrain epoch 101, ZINB loss: nan
+Pretrain epoch 102, ZINB loss: nan
+Pretrain epoch 103, ZINB loss: nan
+Pretrain epoch 104, ZINB loss: nan
+Pretrain epoch 105, ZINB loss: nan
+Pretrain epoch 106, ZINB loss: nan
+Pretrain epoch 107, ZINB loss: nan
+Pretrain epoch 108, ZINB loss: nan
+Pretrain epoch 109, ZINB loss: nan
+Pretrain epoch 110, ZINB loss: nan
+Pretrain epoch 111, ZINB loss: nan
+Pretrain epoch 112, ZINB loss: nan
+Pretrain epoch 113, ZINB loss: nan
+Pretrain epoch 114, ZINB loss: nan
+Pretrain epoch 115, ZINB loss: nan
+Pretrain epoch 116, ZINB loss: nan
+Pretrain epoch 117, ZINB loss: nan
+Pretrain epoch 118, ZINB loss: nan
+Pretrain epoch 119, ZINB loss: nan
+Pretrain epoch 120, ZINB loss: nan
+Pretrain epoch 121, ZINB loss: nan
+Pretrain epoch 122, ZINB loss: nan
+Pretrain epoch 123, ZINB loss: nan
+Pretrain epoch 124, ZINB loss: nan
+Pretrain epoch 125, ZINB loss: nan
+Pretrain epoch 126, ZINB loss: nan
+Pretrain epoch 127, ZINB loss: nan
+Pretrain epoch 128, ZINB loss: nan
+Pretrain epoch 129, ZINB loss: nan
+Pretrain epoch 130, ZINB loss: nan
+Pretrain epoch 131, ZINB loss: nan
+Pretrain epoch 132, ZINB loss: nan
+Pretrain epoch 133, ZINB loss: nan
+Pretrain epoch 134, ZINB loss: nan
+Pretrain epoch 135, ZINB loss: nan
+Pretrain epoch 136, ZINB loss: nan
+Pretrain epoch 137, ZINB loss: nan
+Pretrain epoch 138, ZINB loss: nan
+Pretrain epoch 139, ZINB loss: nan
+Pretrain epoch 140, ZINB loss: nan
+Pretrain epoch 141, ZINB loss: nan
+Pretrain epoch 142, ZINB loss: nan
+Pretrain epoch 143, ZINB loss: nan
+Pretrain epoch 144, ZINB loss: nan
+Pretrain epoch 145, ZINB loss: nan
+Pretrain epoch 146, ZINB loss: nan
+Pretrain epoch 147, ZINB loss: nan
+Pretrain epoch 148, ZINB loss: nan
+Pretrain epoch 149, ZINB loss: nan
+Pretrain epoch 150, ZINB loss: nan
+Pretrain epoch 151, ZINB loss: nan
+Pretrain epoch 152, ZINB loss: nan
+Pretrain epoch 153, ZINB loss: nan
+Pretrain epoch 154, ZINB loss: nan
+Pretrain epoch 155, ZINB loss: nan
+Pretrain epoch 156, ZINB loss: nan
+Pretrain epoch 157, ZINB loss: nan
+Pretrain epoch 158, ZINB loss: nan
+Pretrain epoch 159, ZINB loss: nan
+Pretrain epoch 160, ZINB loss: nan
+Pretrain epoch 161, ZINB loss: nan
+Pretrain epoch 162, ZINB loss: nan
+Pretrain epoch 163, ZINB loss: nan
+Pretrain epoch 164, ZINB loss: nan
+Pretrain epoch 165, ZINB loss: nan
+Pretrain epoch 166, ZINB loss: nan
+Pretrain epoch 167, ZINB loss: nan
+Pretrain epoch 168, ZINB loss: nan
+Pretrain epoch 169, ZINB loss: nan
+Pretrain epoch 170, ZINB loss: nan
+Pretrain epoch 171, ZINB loss: nan
+Pretrain epoch 172, ZINB loss: nan
+Pretrain epoch 173, ZINB loss: nan
+Pretrain epoch 174, ZINB loss: nan
+Pretrain epoch 175, ZINB loss: nan
+Pretrain epoch 176, ZINB loss: nan
+Pretrain epoch 177, ZINB loss: nan
+Pretrain epoch 178, ZINB loss: nan
+Pretrain epoch 179, ZINB loss: nan
+Pretrain epoch 180, ZINB loss: nan
+Pretrain epoch 181, ZINB loss: nan
+Pretrain epoch 182, ZINB loss: nan
+Pretrain epoch 183, ZINB loss: nan
+Pretrain epoch 184, ZINB loss: nan
+Pretrain epoch 185, ZINB loss: nan
+Pretrain epoch 186, ZINB loss: nan
+Pretrain epoch 187, ZINB loss: nan
+Pretrain epoch 188, ZINB loss: nan
+Pretrain epoch 189, ZINB loss: nan
+Pretrain epoch 190, ZINB loss: nan
+Pretrain epoch 191, ZINB loss: nan
+Pretrain epoch 192, ZINB loss: nan
+Pretrain epoch 193, ZINB loss: nan
+Pretrain epoch 194, ZINB loss: nan
+Pretrain epoch 195, ZINB loss: nan
+Pretrain epoch 196, ZINB loss: nan
+Pretrain epoch 197, ZINB loss: nan
+Pretrain epoch 198, ZINB loss: nan
+Pretrain epoch 199, ZINB loss: nan
+Pretrain epoch 200, ZINB loss: nan
+Pretrain epoch 201, ZINB loss: nan
+Pretrain epoch 202, ZINB loss: nan
+Pretrain epoch 203, ZINB loss: nan
+Pretrain epoch 204, ZINB loss: nan
+Pretrain epoch 205, ZINB loss: nan
+Pretrain epoch 206, ZINB loss: nan
+Pretrain epoch 207, ZINB loss: nan
+Pretrain epoch 208, ZINB loss: nan
+Pretrain epoch 209, ZINB loss: nan
+Pretrain epoch 210, ZINB loss: nan
+Pretrain epoch 211, ZINB loss: nan
+Pretrain epoch 212, ZINB loss: nan
+Pretrain epoch 213, ZINB loss: nan
+Pretrain epoch 214, ZINB loss: nan
+Pretrain epoch 215, ZINB loss: nan
+Pretrain epoch 216, ZINB loss: nan
+Pretrain epoch 217, ZINB loss: nan
+Pretrain epoch 218, ZINB loss: nan
+Pretrain epoch 219, ZINB loss: nan
+Pretrain epoch 220, ZINB loss: nan
+Pretrain epoch 221, ZINB loss: nan
+Pretrain epoch 222, ZINB loss: nan
+Pretrain epoch 223, ZINB loss: nan
+Pretrain epoch 224, ZINB loss: nan
+Pretrain epoch 225, ZINB loss: nan
+Pretrain epoch 226, ZINB loss: nan
+Pretrain epoch 227, ZINB loss: nan
+Pretrain epoch 228, ZINB loss: nan
+Pretrain epoch 229, ZINB loss: nan
+Pretrain epoch 230, ZINB loss: nan
+Pretrain epoch 231, ZINB loss: nan
+Pretrain epoch 232, ZINB loss: nan
+Pretrain epoch 233, ZINB loss: nan
+Pretrain epoch 234, ZINB loss: nan
+Pretrain epoch 235, ZINB loss: nan
+Pretrain epoch 236, ZINB loss: nan
+Pretrain epoch 237, ZINB loss: nan
+Pretrain epoch 238, ZINB loss: nan
+Pretrain epoch 239, ZINB loss: nan
+Pretrain epoch 240, ZINB loss: nan
+Pretrain epoch 241, ZINB loss: nan
+Pretrain epoch 242, ZINB loss: nan
+Pretrain epoch 243, ZINB loss: nan
+Pretrain epoch 244, ZINB loss: nan
+Pretrain epoch 245, ZINB loss: nan
+Pretrain epoch 246, ZINB loss: nan
+Pretrain epoch 247, ZINB loss: nan
+Pretrain epoch 248, ZINB loss: nan
+Pretrain epoch 249, ZINB loss: nan
+Pretrain epoch 250, ZINB loss: nan
+Pretrain epoch 251, ZINB loss: nan
+Pretrain epoch 252, ZINB loss: nan
+Pretrain epoch 253, ZINB loss: nan
+Pretrain epoch 254, ZINB loss: nan
+Pretrain epoch 255, ZINB loss: nan
+Pretrain epoch 256, ZINB loss: nan
+Pretrain epoch 257, ZINB loss: nan
+Pretrain epoch 258, ZINB loss: nan
+Pretrain epoch 259, ZINB loss: nan
+Pretrain epoch 260, ZINB loss: nan
+Pretrain epoch 261, ZINB loss: nan
+Pretrain epoch 262, ZINB loss: nan
+Pretrain epoch 263, ZINB loss: nan
+Pretrain epoch 264, ZINB loss: nan
+Pretrain epoch 265, ZINB loss: nan
+Pretrain epoch 266, ZINB loss: nan
+Pretrain epoch 267, ZINB loss: nan
+Pretrain epoch 268, ZINB loss: nan
+Pretrain epoch 269, ZINB loss: nan
+Pretrain epoch 270, ZINB loss: nan
+Pretrain epoch 271, ZINB loss: nan
+Pretrain epoch 272, ZINB loss: nan
+Pretrain epoch 273, ZINB loss: nan
+Pretrain epoch 274, ZINB loss: nan
+Pretrain epoch 275, ZINB loss: nan
+Pretrain epoch 276, ZINB loss: nan
+Pretrain epoch 277, ZINB loss: nan
+Pretrain epoch 278, ZINB loss: nan
+Pretrain epoch 279, ZINB loss: nan
+Pretrain epoch 280, ZINB loss: nan
+Pretrain epoch 281, ZINB loss: nan
+Pretrain epoch 282, ZINB loss: nan
+Pretrain epoch 283, ZINB loss: nan
+Pretrain epoch 284, ZINB loss: nan
+Pretrain epoch 285, ZINB loss: nan
+Pretrain epoch 286, ZINB loss: nan
+Pretrain epoch 287, ZINB loss: nan
+Pretrain epoch 288, ZINB loss: nan
+Pretrain epoch 289, ZINB loss: nan
+Pretrain epoch 290, ZINB loss: nan
+Pretrain epoch 291, ZINB loss: nan
+Pretrain epoch 292, ZINB loss: nan
+Pretrain epoch 293, ZINB loss: nan
+Pretrain epoch 294, ZINB loss: nan
+Pretrain epoch 295, ZINB loss: nan
+Pretrain epoch 296, ZINB loss: nan
+Pretrain epoch 297, ZINB loss: nan
+Pretrain epoch 298, ZINB loss: nan
+Pretrain epoch 299, ZINB loss: nan
+Pretrain epoch 300, ZINB loss: nan
+Pretraining time: 93 seconds.
+Clustering stage
+Initializing cluster centers with kmeans.
+6 has been completed
+-----------------------
+7 has been submitted!
+The random seed set for torch is seed = 337
+### Autoencoder: Successfully preprocessed 14000 genes and 704 cells.
+Namespace(ae_weight_file='AE_weights.pth.tar', ae_weights=None, batch_size=256, data_file='/home/xyao/scVI/scVI_cell_clustering_HPC/Data/Kolod/Kolod_scVI_input_raw.h5ad', device='cpu', final_latent_file='final_latent_file.txt', gamma=1.0, knn=20, maxiter=2000, n_clusters=3, predict_label_file='/home/xyao/scDeepCluster/Result/Kolod/Batch_7/pred_labels.txt', pretrain_epochs=300, resolution=0.8, save_dir='/home/xyao/scDeepCluster/Result/Kolod/Batch_7', select_genes=0, sigma=2.5, tol=0.001, update_interval=1)
+(704, 14000)
+scDeepCluster(
+  (encoder): Sequential(
+    (0): Linear(in_features=14000, out_features=256, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=256, out_features=64, bias=True)
+    (3): ReLU()
+  )
+  (decoder): Sequential(
+    (0): Linear(in_features=32, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=64, out_features=256, bias=True)
+    (3): ReLU()
+  )
+  (_enc_mu): Linear(in_features=64, out_features=32, bias=True)
+  (_dec_mean): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): MeanAct()
+  )
+  (_dec_disp): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): DispAct()
+  )
+  (_dec_pi): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): Sigmoid()
+  )
+  (zinb_loss): ZINBLoss()
+)
+Pretraining stage
+Pretrain epoch   1, ZINB loss: 141.94070018
+Pretrain epoch   2, ZINB loss: 103.36275205
+Pretrain epoch   3, ZINB loss: 35.77730335
+Pretrain epoch   4, ZINB loss: nan
+Pretrain epoch   5, ZINB loss: nan
+Pretrain epoch   6, ZINB loss: nan
+Pretrain epoch   7, ZINB loss: nan
+Pretrain epoch   8, ZINB loss: nan
+Pretrain epoch   9, ZINB loss: nan
+Pretrain epoch  10, ZINB loss: nan
+Pretrain epoch  11, ZINB loss: nan
+Pretrain epoch  12, ZINB loss: nan
+Pretrain epoch  13, ZINB loss: nan
+Pretrain epoch  14, ZINB loss: nan
+Pretrain epoch  15, ZINB loss: nan
+Pretrain epoch  16, ZINB loss: nan
+Pretrain epoch  17, ZINB loss: nan
+Pretrain epoch  18, ZINB loss: nan
+Pretrain epoch  19, ZINB loss: nan
+Pretrain epoch  20, ZINB loss: nan
+Pretrain epoch  21, ZINB loss: nan
+Pretrain epoch  22, ZINB loss: nan
+Pretrain epoch  23, ZINB loss: nan
+Pretrain epoch  24, ZINB loss: nan
+Pretrain epoch  25, ZINB loss: nan
+Pretrain epoch  26, ZINB loss: nan
+Pretrain epoch  27, ZINB loss: nan
+Pretrain epoch  28, ZINB loss: nan
+Pretrain epoch  29, ZINB loss: nan
+Pretrain epoch  30, ZINB loss: nan
+Pretrain epoch  31, ZINB loss: nan
+Pretrain epoch  32, ZINB loss: nan
+Pretrain epoch  33, ZINB loss: nan
+Pretrain epoch  34, ZINB loss: nan
+Pretrain epoch  35, ZINB loss: nan
+Pretrain epoch  36, ZINB loss: nan
+Pretrain epoch  37, ZINB loss: nan
+Pretrain epoch  38, ZINB loss: nan
+Pretrain epoch  39, ZINB loss: nan
+Pretrain epoch  40, ZINB loss: nan
+Pretrain epoch  41, ZINB loss: nan
+Pretrain epoch  42, ZINB loss: nan
+Pretrain epoch  43, ZINB loss: nan
+Pretrain epoch  44, ZINB loss: nan
+Pretrain epoch  45, ZINB loss: nan
+Pretrain epoch  46, ZINB loss: nan
+Pretrain epoch  47, ZINB loss: nan
+Pretrain epoch  48, ZINB loss: nan
+Pretrain epoch  49, ZINB loss: nan
+Pretrain epoch  50, ZINB loss: nan
+Pretrain epoch  51, ZINB loss: nan
+Pretrain epoch  52, ZINB loss: nan
+Pretrain epoch  53, ZINB loss: nan
+Pretrain epoch  54, ZINB loss: nan
+Pretrain epoch  55, ZINB loss: nan
+Pretrain epoch  56, ZINB loss: nan
+Pretrain epoch  57, ZINB loss: nan
+Pretrain epoch  58, ZINB loss: nan
+Pretrain epoch  59, ZINB loss: nan
+Pretrain epoch  60, ZINB loss: nan
+Pretrain epoch  61, ZINB loss: nan
+Pretrain epoch  62, ZINB loss: nan
+Pretrain epoch  63, ZINB loss: nan
+Pretrain epoch  64, ZINB loss: nan
+Pretrain epoch  65, ZINB loss: nan
+Pretrain epoch  66, ZINB loss: nan
+Pretrain epoch  67, ZINB loss: nan
+Pretrain epoch  68, ZINB loss: nan
+Pretrain epoch  69, ZINB loss: nan
+Pretrain epoch  70, ZINB loss: nan
+Pretrain epoch  71, ZINB loss: nan
+Pretrain epoch  72, ZINB loss: nan
+Pretrain epoch  73, ZINB loss: nan
+Pretrain epoch  74, ZINB loss: nan
+Pretrain epoch  75, ZINB loss: nan
+Pretrain epoch  76, ZINB loss: nan
+Pretrain epoch  77, ZINB loss: nan
+Pretrain epoch  78, ZINB loss: nan
+Pretrain epoch  79, ZINB loss: nan
+Pretrain epoch  80, ZINB loss: nan
+Pretrain epoch  81, ZINB loss: nan
+Pretrain epoch  82, ZINB loss: nan
+Pretrain epoch  83, ZINB loss: nan
+Pretrain epoch  84, ZINB loss: nan
+Pretrain epoch  85, ZINB loss: nan
+Pretrain epoch  86, ZINB loss: nan
+Pretrain epoch  87, ZINB loss: nan
+Pretrain epoch  88, ZINB loss: nan
+Pretrain epoch  89, ZINB loss: nan
+Pretrain epoch  90, ZINB loss: nan
+Pretrain epoch  91, ZINB loss: nan
+Pretrain epoch  92, ZINB loss: nan
+Pretrain epoch  93, ZINB loss: nan
+Pretrain epoch  94, ZINB loss: nan
+Pretrain epoch  95, ZINB loss: nan
+Pretrain epoch  96, ZINB loss: nan
+Pretrain epoch  97, ZINB loss: nan
+Pretrain epoch  98, ZINB loss: nan
+Pretrain epoch  99, ZINB loss: nan
+Pretrain epoch 100, ZINB loss: nan
+Pretrain epoch 101, ZINB loss: nan
+Pretrain epoch 102, ZINB loss: nan
+Pretrain epoch 103, ZINB loss: nan
+Pretrain epoch 104, ZINB loss: nan
+Pretrain epoch 105, ZINB loss: nan
+Pretrain epoch 106, ZINB loss: nan
+Pretrain epoch 107, ZINB loss: nan
+Pretrain epoch 108, ZINB loss: nan
+Pretrain epoch 109, ZINB loss: nan
+Pretrain epoch 110, ZINB loss: nan
+Pretrain epoch 111, ZINB loss: nan
+Pretrain epoch 112, ZINB loss: nan
+Pretrain epoch 113, ZINB loss: nan
+Pretrain epoch 114, ZINB loss: nan
+Pretrain epoch 115, ZINB loss: nan
+Pretrain epoch 116, ZINB loss: nan
+Pretrain epoch 117, ZINB loss: nan
+Pretrain epoch 118, ZINB loss: nan
+Pretrain epoch 119, ZINB loss: nan
+Pretrain epoch 120, ZINB loss: nan
+Pretrain epoch 121, ZINB loss: nan
+Pretrain epoch 122, ZINB loss: nan
+Pretrain epoch 123, ZINB loss: nan
+Pretrain epoch 124, ZINB loss: nan
+Pretrain epoch 125, ZINB loss: nan
+Pretrain epoch 126, ZINB loss: nan
+Pretrain epoch 127, ZINB loss: nan
+Pretrain epoch 128, ZINB loss: nan
+Pretrain epoch 129, ZINB loss: nan
+Pretrain epoch 130, ZINB loss: nan
+Pretrain epoch 131, ZINB loss: nan
+Pretrain epoch 132, ZINB loss: nan
+Pretrain epoch 133, ZINB loss: nan
+Pretrain epoch 134, ZINB loss: nan
+Pretrain epoch 135, ZINB loss: nan
+Pretrain epoch 136, ZINB loss: nan
+Pretrain epoch 137, ZINB loss: nan
+Pretrain epoch 138, ZINB loss: nan
+Pretrain epoch 139, ZINB loss: nan
+Pretrain epoch 140, ZINB loss: nan
+Pretrain epoch 141, ZINB loss: nan
+Pretrain epoch 142, ZINB loss: nan
+Pretrain epoch 143, ZINB loss: nan
+Pretrain epoch 144, ZINB loss: nan
+Pretrain epoch 145, ZINB loss: nan
+Pretrain epoch 146, ZINB loss: nan
+Pretrain epoch 147, ZINB loss: nan
+Pretrain epoch 148, ZINB loss: nan
+Pretrain epoch 149, ZINB loss: nan
+Pretrain epoch 150, ZINB loss: nan
+Pretrain epoch 151, ZINB loss: nan
+Pretrain epoch 152, ZINB loss: nan
+Pretrain epoch 153, ZINB loss: nan
+Pretrain epoch 154, ZINB loss: nan
+Pretrain epoch 155, ZINB loss: nan
+Pretrain epoch 156, ZINB loss: nan
+Pretrain epoch 157, ZINB loss: nan
+Pretrain epoch 158, ZINB loss: nan
+Pretrain epoch 159, ZINB loss: nan
+Pretrain epoch 160, ZINB loss: nan
+Pretrain epoch 161, ZINB loss: nan
+Pretrain epoch 162, ZINB loss: nan
+Pretrain epoch 163, ZINB loss: nan
+Pretrain epoch 164, ZINB loss: nan
+Pretrain epoch 165, ZINB loss: nan
+Pretrain epoch 166, ZINB loss: nan
+Pretrain epoch 167, ZINB loss: nan
+Pretrain epoch 168, ZINB loss: nan
+Pretrain epoch 169, ZINB loss: nan
+Pretrain epoch 170, ZINB loss: nan
+Pretrain epoch 171, ZINB loss: nan
+Pretrain epoch 172, ZINB loss: nan
+Pretrain epoch 173, ZINB loss: nan
+Pretrain epoch 174, ZINB loss: nan
+Pretrain epoch 175, ZINB loss: nan
+Pretrain epoch 176, ZINB loss: nan
+Pretrain epoch 177, ZINB loss: nan
+Pretrain epoch 178, ZINB loss: nan
+Pretrain epoch 179, ZINB loss: nan
+Pretrain epoch 180, ZINB loss: nan
+Pretrain epoch 181, ZINB loss: nan
+Pretrain epoch 182, ZINB loss: nan
+Pretrain epoch 183, ZINB loss: nan
+Pretrain epoch 184, ZINB loss: nan
+Pretrain epoch 185, ZINB loss: nan
+Pretrain epoch 186, ZINB loss: nan
+Pretrain epoch 187, ZINB loss: nan
+Pretrain epoch 188, ZINB loss: nan
+Pretrain epoch 189, ZINB loss: nan
+Pretrain epoch 190, ZINB loss: nan
+Pretrain epoch 191, ZINB loss: nan
+Pretrain epoch 192, ZINB loss: nan
+Pretrain epoch 193, ZINB loss: nan
+Pretrain epoch 194, ZINB loss: nan
+Pretrain epoch 195, ZINB loss: nan
+Pretrain epoch 196, ZINB loss: nan
+Pretrain epoch 197, ZINB loss: nan
+Pretrain epoch 198, ZINB loss: nan
+Pretrain epoch 199, ZINB loss: nan
+Pretrain epoch 200, ZINB loss: nan
+Pretrain epoch 201, ZINB loss: nan
+Pretrain epoch 202, ZINB loss: nan
+Pretrain epoch 203, ZINB loss: nan
+Pretrain epoch 204, ZINB loss: nan
+Pretrain epoch 205, ZINB loss: nan
+Pretrain epoch 206, ZINB loss: nan
+Pretrain epoch 207, ZINB loss: nan
+Pretrain epoch 208, ZINB loss: nan
+Pretrain epoch 209, ZINB loss: nan
+Pretrain epoch 210, ZINB loss: nan
+Pretrain epoch 211, ZINB loss: nan
+Pretrain epoch 212, ZINB loss: nan
+Pretrain epoch 213, ZINB loss: nan
+Pretrain epoch 214, ZINB loss: nan
+Pretrain epoch 215, ZINB loss: nan
+Pretrain epoch 216, ZINB loss: nan
+Pretrain epoch 217, ZINB loss: nan
+Pretrain epoch 218, ZINB loss: nan
+Pretrain epoch 219, ZINB loss: nan
+Pretrain epoch 220, ZINB loss: nan
+Pretrain epoch 221, ZINB loss: nan
+Pretrain epoch 222, ZINB loss: nan
+Pretrain epoch 223, ZINB loss: nan
+Pretrain epoch 224, ZINB loss: nan
+Pretrain epoch 225, ZINB loss: nan
+Pretrain epoch 226, ZINB loss: nan
+Pretrain epoch 227, ZINB loss: nan
+Pretrain epoch 228, ZINB loss: nan
+Pretrain epoch 229, ZINB loss: nan
+Pretrain epoch 230, ZINB loss: nan
+Pretrain epoch 231, ZINB loss: nan
+Pretrain epoch 232, ZINB loss: nan
+Pretrain epoch 233, ZINB loss: nan
+Pretrain epoch 234, ZINB loss: nan
+Pretrain epoch 235, ZINB loss: nan
+Pretrain epoch 236, ZINB loss: nan
+Pretrain epoch 237, ZINB loss: nan
+Pretrain epoch 238, ZINB loss: nan
+Pretrain epoch 239, ZINB loss: nan
+Pretrain epoch 240, ZINB loss: nan
+Pretrain epoch 241, ZINB loss: nan
+Pretrain epoch 242, ZINB loss: nan
+Pretrain epoch 243, ZINB loss: nan
+Pretrain epoch 244, ZINB loss: nan
+Pretrain epoch 245, ZINB loss: nan
+Pretrain epoch 246, ZINB loss: nan
+Pretrain epoch 247, ZINB loss: nan
+Pretrain epoch 248, ZINB loss: nan
+Pretrain epoch 249, ZINB loss: nan
+Pretrain epoch 250, ZINB loss: nan
+Pretrain epoch 251, ZINB loss: nan
+Pretrain epoch 252, ZINB loss: nan
+Pretrain epoch 253, ZINB loss: nan
+Pretrain epoch 254, ZINB loss: nan
+Pretrain epoch 255, ZINB loss: nan
+Pretrain epoch 256, ZINB loss: nan
+Pretrain epoch 257, ZINB loss: nan
+Pretrain epoch 258, ZINB loss: nan
+Pretrain epoch 259, ZINB loss: nan
+Pretrain epoch 260, ZINB loss: nan
+Pretrain epoch 261, ZINB loss: nan
+Pretrain epoch 262, ZINB loss: nan
+Pretrain epoch 263, ZINB loss: nan
+Pretrain epoch 264, ZINB loss: nan
+Pretrain epoch 265, ZINB loss: nan
+Pretrain epoch 266, ZINB loss: nan
+Pretrain epoch 267, ZINB loss: nan
+Pretrain epoch 268, ZINB loss: nan
+Pretrain epoch 269, ZINB loss: nan
+Pretrain epoch 270, ZINB loss: nan
+Pretrain epoch 271, ZINB loss: nan
+Pretrain epoch 272, ZINB loss: nan
+Pretrain epoch 273, ZINB loss: nan
+Pretrain epoch 274, ZINB loss: nan
+Pretrain epoch 275, ZINB loss: nan
+Pretrain epoch 276, ZINB loss: nan
+Pretrain epoch 277, ZINB loss: nan
+Pretrain epoch 278, ZINB loss: nan
+Pretrain epoch 279, ZINB loss: nan
+Pretrain epoch 280, ZINB loss: nan
+Pretrain epoch 281, ZINB loss: nan
+Pretrain epoch 282, ZINB loss: nan
+Pretrain epoch 283, ZINB loss: nan
+Pretrain epoch 284, ZINB loss: nan
+Pretrain epoch 285, ZINB loss: nan
+Pretrain epoch 286, ZINB loss: nan
+Pretrain epoch 287, ZINB loss: nan
+Pretrain epoch 288, ZINB loss: nan
+Pretrain epoch 289, ZINB loss: nan
+Pretrain epoch 290, ZINB loss: nan
+Pretrain epoch 291, ZINB loss: nan
+Pretrain epoch 292, ZINB loss: nan
+Pretrain epoch 293, ZINB loss: nan
+Pretrain epoch 294, ZINB loss: nan
+Pretrain epoch 295, ZINB loss: nan
+Pretrain epoch 296, ZINB loss: nan
+Pretrain epoch 297, ZINB loss: nan
+Pretrain epoch 298, ZINB loss: nan
+Pretrain epoch 299, ZINB loss: nan
+Pretrain epoch 300, ZINB loss: nan
+Pretraining time: 95 seconds.
+Clustering stage
+Initializing cluster centers with kmeans.
+7 has been completed
+-----------------------
+8 has been submitted!
+The random seed set for torch is seed = 854
+### Autoencoder: Successfully preprocessed 14000 genes and 704 cells.
+Namespace(ae_weight_file='AE_weights.pth.tar', ae_weights=None, batch_size=256, data_file='/home/xyao/scVI/scVI_cell_clustering_HPC/Data/Kolod/Kolod_scVI_input_raw.h5ad', device='cpu', final_latent_file='final_latent_file.txt', gamma=1.0, knn=20, maxiter=2000, n_clusters=3, predict_label_file='/home/xyao/scDeepCluster/Result/Kolod/Batch_8/pred_labels.txt', pretrain_epochs=300, resolution=0.8, save_dir='/home/xyao/scDeepCluster/Result/Kolod/Batch_8', select_genes=0, sigma=2.5, tol=0.001, update_interval=1)
+(704, 14000)
+scDeepCluster(
+  (encoder): Sequential(
+    (0): Linear(in_features=14000, out_features=256, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=256, out_features=64, bias=True)
+    (3): ReLU()
+  )
+  (decoder): Sequential(
+    (0): Linear(in_features=32, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=64, out_features=256, bias=True)
+    (3): ReLU()
+  )
+  (_enc_mu): Linear(in_features=64, out_features=32, bias=True)
+  (_dec_mean): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): MeanAct()
+  )
+  (_dec_disp): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): DispAct()
+  )
+  (_dec_pi): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): Sigmoid()
+  )
+  (zinb_loss): ZINBLoss()
+)
+Pretraining stage
+Pretrain epoch   1, ZINB loss: 143.49079063
+Pretrain epoch   2, ZINB loss: 110.55321711
+Pretrain epoch   3, ZINB loss: 42.95668151
+Pretrain epoch   4, ZINB loss: 8.65147040
+Pretrain epoch   5, ZINB loss: nan
+Pretrain epoch   6, ZINB loss: nan
+Pretrain epoch   7, ZINB loss: nan
+Pretrain epoch   8, ZINB loss: nan
+Pretrain epoch   9, ZINB loss: nan
+Pretrain epoch  10, ZINB loss: nan
+Pretrain epoch  11, ZINB loss: nan
+Pretrain epoch  12, ZINB loss: nan
+Pretrain epoch  13, ZINB loss: nan
+Pretrain epoch  14, ZINB loss: nan
+Pretrain epoch  15, ZINB loss: nan
+Pretrain epoch  16, ZINB loss: nan
+Pretrain epoch  17, ZINB loss: nan
+Pretrain epoch  18, ZINB loss: nan
+Pretrain epoch  19, ZINB loss: nan
+Pretrain epoch  20, ZINB loss: nan
+Pretrain epoch  21, ZINB loss: nan
+Pretrain epoch  22, ZINB loss: nan
+Pretrain epoch  23, ZINB loss: nan
+Pretrain epoch  24, ZINB loss: nan
+Pretrain epoch  25, ZINB loss: nan
+Pretrain epoch  26, ZINB loss: nan
+Pretrain epoch  27, ZINB loss: nan
+Pretrain epoch  28, ZINB loss: nan
+Pretrain epoch  29, ZINB loss: nan
+Pretrain epoch  30, ZINB loss: nan
+Pretrain epoch  31, ZINB loss: nan
+Pretrain epoch  32, ZINB loss: nan
+Pretrain epoch  33, ZINB loss: nan
+Pretrain epoch  34, ZINB loss: nan
+Pretrain epoch  35, ZINB loss: nan
+Pretrain epoch  36, ZINB loss: nan
+Pretrain epoch  37, ZINB loss: nan
+Pretrain epoch  38, ZINB loss: nan
+Pretrain epoch  39, ZINB loss: nan
+Pretrain epoch  40, ZINB loss: nan
+Pretrain epoch  41, ZINB loss: nan
+Pretrain epoch  42, ZINB loss: nan
+Pretrain epoch  43, ZINB loss: nan
+Pretrain epoch  44, ZINB loss: nan
+Pretrain epoch  45, ZINB loss: nan
+Pretrain epoch  46, ZINB loss: nan
+Pretrain epoch  47, ZINB loss: nan
+Pretrain epoch  48, ZINB loss: nan
+Pretrain epoch  49, ZINB loss: nan
+Pretrain epoch  50, ZINB loss: nan
+Pretrain epoch  51, ZINB loss: nan
+Pretrain epoch  52, ZINB loss: nan
+Pretrain epoch  53, ZINB loss: nan
+Pretrain epoch  54, ZINB loss: nan
+Pretrain epoch  55, ZINB loss: nan
+Pretrain epoch  56, ZINB loss: nan
+Pretrain epoch  57, ZINB loss: nan
+Pretrain epoch  58, ZINB loss: nan
+Pretrain epoch  59, ZINB loss: nan
+Pretrain epoch  60, ZINB loss: nan
+Pretrain epoch  61, ZINB loss: nan
+Pretrain epoch  62, ZINB loss: nan
+Pretrain epoch  63, ZINB loss: nan
+Pretrain epoch  64, ZINB loss: nan
+Pretrain epoch  65, ZINB loss: nan
+Pretrain epoch  66, ZINB loss: nan
+Pretrain epoch  67, ZINB loss: nan
+Pretrain epoch  68, ZINB loss: nan
+Pretrain epoch  69, ZINB loss: nan
+Pretrain epoch  70, ZINB loss: nan
+Pretrain epoch  71, ZINB loss: nan
+Pretrain epoch  72, ZINB loss: nan
+Pretrain epoch  73, ZINB loss: nan
+Pretrain epoch  74, ZINB loss: nan
+Pretrain epoch  75, ZINB loss: nan
+Pretrain epoch  76, ZINB loss: nan
+Pretrain epoch  77, ZINB loss: nan
+Pretrain epoch  78, ZINB loss: nan
+Pretrain epoch  79, ZINB loss: nan
+Pretrain epoch  80, ZINB loss: nan
+Pretrain epoch  81, ZINB loss: nan
+Pretrain epoch  82, ZINB loss: nan
+Pretrain epoch  83, ZINB loss: nan
+Pretrain epoch  84, ZINB loss: nan
+Pretrain epoch  85, ZINB loss: nan
+Pretrain epoch  86, ZINB loss: nan
+Pretrain epoch  87, ZINB loss: nan
+Pretrain epoch  88, ZINB loss: nan
+Pretrain epoch  89, ZINB loss: nan
+Pretrain epoch  90, ZINB loss: nan
+Pretrain epoch  91, ZINB loss: nan
+Pretrain epoch  92, ZINB loss: nan
+Pretrain epoch  93, ZINB loss: nan
+Pretrain epoch  94, ZINB loss: nan
+Pretrain epoch  95, ZINB loss: nan
+Pretrain epoch  96, ZINB loss: nan
+Pretrain epoch  97, ZINB loss: nan
+Pretrain epoch  98, ZINB loss: nan
+Pretrain epoch  99, ZINB loss: nan
+Pretrain epoch 100, ZINB loss: nan
+Pretrain epoch 101, ZINB loss: nan
+Pretrain epoch 102, ZINB loss: nan
+Pretrain epoch 103, ZINB loss: nan
+Pretrain epoch 104, ZINB loss: nan
+Pretrain epoch 105, ZINB loss: nan
+Pretrain epoch 106, ZINB loss: nan
+Pretrain epoch 107, ZINB loss: nan
+Pretrain epoch 108, ZINB loss: nan
+Pretrain epoch 109, ZINB loss: nan
+Pretrain epoch 110, ZINB loss: nan
+Pretrain epoch 111, ZINB loss: nan
+Pretrain epoch 112, ZINB loss: nan
+Pretrain epoch 113, ZINB loss: nan
+Pretrain epoch 114, ZINB loss: nan
+Pretrain epoch 115, ZINB loss: nan
+Pretrain epoch 116, ZINB loss: nan
+Pretrain epoch 117, ZINB loss: nan
+Pretrain epoch 118, ZINB loss: nan
+Pretrain epoch 119, ZINB loss: nan
+Pretrain epoch 120, ZINB loss: nan
+Pretrain epoch 121, ZINB loss: nan
+Pretrain epoch 122, ZINB loss: nan
+Pretrain epoch 123, ZINB loss: nan
+Pretrain epoch 124, ZINB loss: nan
+Pretrain epoch 125, ZINB loss: nan
+Pretrain epoch 126, ZINB loss: nan
+Pretrain epoch 127, ZINB loss: nan
+Pretrain epoch 128, ZINB loss: nan
+Pretrain epoch 129, ZINB loss: nan
+Pretrain epoch 130, ZINB loss: nan
+Pretrain epoch 131, ZINB loss: nan
+Pretrain epoch 132, ZINB loss: nan
+Pretrain epoch 133, ZINB loss: nan
+Pretrain epoch 134, ZINB loss: nan
+Pretrain epoch 135, ZINB loss: nan
+Pretrain epoch 136, ZINB loss: nan
+Pretrain epoch 137, ZINB loss: nan
+Pretrain epoch 138, ZINB loss: nan
+Pretrain epoch 139, ZINB loss: nan
+Pretrain epoch 140, ZINB loss: nan
+Pretrain epoch 141, ZINB loss: nan
+Pretrain epoch 142, ZINB loss: nan
+Pretrain epoch 143, ZINB loss: nan
+Pretrain epoch 144, ZINB loss: nan
+Pretrain epoch 145, ZINB loss: nan
+Pretrain epoch 146, ZINB loss: nan
+Pretrain epoch 147, ZINB loss: nan
+Pretrain epoch 148, ZINB loss: nan
+Pretrain epoch 149, ZINB loss: nan
+Pretrain epoch 150, ZINB loss: nan
+Pretrain epoch 151, ZINB loss: nan
+Pretrain epoch 152, ZINB loss: nan
+Pretrain epoch 153, ZINB loss: nan
+Pretrain epoch 154, ZINB loss: nan
+Pretrain epoch 155, ZINB loss: nan
+Pretrain epoch 156, ZINB loss: nan
+Pretrain epoch 157, ZINB loss: nan
+Pretrain epoch 158, ZINB loss: nan
+Pretrain epoch 159, ZINB loss: nan
+Pretrain epoch 160, ZINB loss: nan
+Pretrain epoch 161, ZINB loss: nan
+Pretrain epoch 162, ZINB loss: nan
+Pretrain epoch 163, ZINB loss: nan
+Pretrain epoch 164, ZINB loss: nan
+Pretrain epoch 165, ZINB loss: nan
+Pretrain epoch 166, ZINB loss: nan
+Pretrain epoch 167, ZINB loss: nan
+Pretrain epoch 168, ZINB loss: nan
+Pretrain epoch 169, ZINB loss: nan
+Pretrain epoch 170, ZINB loss: nan
+Pretrain epoch 171, ZINB loss: nan
+Pretrain epoch 172, ZINB loss: nan
+Pretrain epoch 173, ZINB loss: nan
+Pretrain epoch 174, ZINB loss: nan
+Pretrain epoch 175, ZINB loss: nan
+Pretrain epoch 176, ZINB loss: nan
+Pretrain epoch 177, ZINB loss: nan
+Pretrain epoch 178, ZINB loss: nan
+Pretrain epoch 179, ZINB loss: nan
+Pretrain epoch 180, ZINB loss: nan
+Pretrain epoch 181, ZINB loss: nan
+Pretrain epoch 182, ZINB loss: nan
+Pretrain epoch 183, ZINB loss: nan
+Pretrain epoch 184, ZINB loss: nan
+Pretrain epoch 185, ZINB loss: nan
+Pretrain epoch 186, ZINB loss: nan
+Pretrain epoch 187, ZINB loss: nan
+Pretrain epoch 188, ZINB loss: nan
+Pretrain epoch 189, ZINB loss: nan
+Pretrain epoch 190, ZINB loss: nan
+Pretrain epoch 191, ZINB loss: nan
+Pretrain epoch 192, ZINB loss: nan
+Pretrain epoch 193, ZINB loss: nan
+Pretrain epoch 194, ZINB loss: nan
+Pretrain epoch 195, ZINB loss: nan
+Pretrain epoch 196, ZINB loss: nan
+Pretrain epoch 197, ZINB loss: nan
+Pretrain epoch 198, ZINB loss: nan
+Pretrain epoch 199, ZINB loss: nan
+Pretrain epoch 200, ZINB loss: nan
+Pretrain epoch 201, ZINB loss: nan
+Pretrain epoch 202, ZINB loss: nan
+Pretrain epoch 203, ZINB loss: nan
+Pretrain epoch 204, ZINB loss: nan
+Pretrain epoch 205, ZINB loss: nan
+Pretrain epoch 206, ZINB loss: nan
+Pretrain epoch 207, ZINB loss: nan
+Pretrain epoch 208, ZINB loss: nan
+Pretrain epoch 209, ZINB loss: nan
+Pretrain epoch 210, ZINB loss: nan
+Pretrain epoch 211, ZINB loss: nan
+Pretrain epoch 212, ZINB loss: nan
+Pretrain epoch 213, ZINB loss: nan
+Pretrain epoch 214, ZINB loss: nan
+Pretrain epoch 215, ZINB loss: nan
+Pretrain epoch 216, ZINB loss: nan
+Pretrain epoch 217, ZINB loss: nan
+Pretrain epoch 218, ZINB loss: nan
+Pretrain epoch 219, ZINB loss: nan
+Pretrain epoch 220, ZINB loss: nan
+Pretrain epoch 221, ZINB loss: nan
+Pretrain epoch 222, ZINB loss: nan
+Pretrain epoch 223, ZINB loss: nan
+Pretrain epoch 224, ZINB loss: nan
+Pretrain epoch 225, ZINB loss: nan
+Pretrain epoch 226, ZINB loss: nan
+Pretrain epoch 227, ZINB loss: nan
+Pretrain epoch 228, ZINB loss: nan
+Pretrain epoch 229, ZINB loss: nan
+Pretrain epoch 230, ZINB loss: nan
+Pretrain epoch 231, ZINB loss: nan
+Pretrain epoch 232, ZINB loss: nan
+Pretrain epoch 233, ZINB loss: nan
+Pretrain epoch 234, ZINB loss: nan
+Pretrain epoch 235, ZINB loss: nan
+Pretrain epoch 236, ZINB loss: nan
+Pretrain epoch 237, ZINB loss: nan
+Pretrain epoch 238, ZINB loss: nan
+Pretrain epoch 239, ZINB loss: nan
+Pretrain epoch 240, ZINB loss: nan
+Pretrain epoch 241, ZINB loss: nan
+Pretrain epoch 242, ZINB loss: nan
+Pretrain epoch 243, ZINB loss: nan
+Pretrain epoch 244, ZINB loss: nan
+Pretrain epoch 245, ZINB loss: nan
+Pretrain epoch 246, ZINB loss: nan
+Pretrain epoch 247, ZINB loss: nan
+Pretrain epoch 248, ZINB loss: nan
+Pretrain epoch 249, ZINB loss: nan
+Pretrain epoch 250, ZINB loss: nan
+Pretrain epoch 251, ZINB loss: nan
+Pretrain epoch 252, ZINB loss: nan
+Pretrain epoch 253, ZINB loss: nan
+Pretrain epoch 254, ZINB loss: nan
+Pretrain epoch 255, ZINB loss: nan
+Pretrain epoch 256, ZINB loss: nan
+Pretrain epoch 257, ZINB loss: nan
+Pretrain epoch 258, ZINB loss: nan
+Pretrain epoch 259, ZINB loss: nan
+Pretrain epoch 260, ZINB loss: nan
+Pretrain epoch 261, ZINB loss: nan
+Pretrain epoch 262, ZINB loss: nan
+Pretrain epoch 263, ZINB loss: nan
+Pretrain epoch 264, ZINB loss: nan
+Pretrain epoch 265, ZINB loss: nan
+Pretrain epoch 266, ZINB loss: nan
+Pretrain epoch 267, ZINB loss: nan
+Pretrain epoch 268, ZINB loss: nan
+Pretrain epoch 269, ZINB loss: nan
+Pretrain epoch 270, ZINB loss: nan
+Pretrain epoch 271, ZINB loss: nan
+Pretrain epoch 272, ZINB loss: nan
+Pretrain epoch 273, ZINB loss: nan
+Pretrain epoch 274, ZINB loss: nan
+Pretrain epoch 275, ZINB loss: nan
+Pretrain epoch 276, ZINB loss: nan
+Pretrain epoch 277, ZINB loss: nan
+Pretrain epoch 278, ZINB loss: nan
+Pretrain epoch 279, ZINB loss: nan
+Pretrain epoch 280, ZINB loss: nan
+Pretrain epoch 281, ZINB loss: nan
+Pretrain epoch 282, ZINB loss: nan
+Pretrain epoch 283, ZINB loss: nan
+Pretrain epoch 284, ZINB loss: nan
+Pretrain epoch 285, ZINB loss: nan
+Pretrain epoch 286, ZINB loss: nan
+Pretrain epoch 287, ZINB loss: nan
+Pretrain epoch 288, ZINB loss: nan
+Pretrain epoch 289, ZINB loss: nan
+Pretrain epoch 290, ZINB loss: nan
+Pretrain epoch 291, ZINB loss: nan
+Pretrain epoch 292, ZINB loss: nan
+Pretrain epoch 293, ZINB loss: nan
+Pretrain epoch 294, ZINB loss: nan
+Pretrain epoch 295, ZINB loss: nan
+Pretrain epoch 296, ZINB loss: nan
+Pretrain epoch 297, ZINB loss: nan
+Pretrain epoch 298, ZINB loss: nan
+Pretrain epoch 299, ZINB loss: nan
+Pretrain epoch 300, ZINB loss: nan
+Pretraining time: 99 seconds.
+Clustering stage
+Initializing cluster centers with kmeans.
+8 has been completed
+-----------------------
+9 has been submitted!
+The random seed set for torch is seed = 94
+### Autoencoder: Successfully preprocessed 14000 genes and 704 cells.
+Namespace(ae_weight_file='AE_weights.pth.tar', ae_weights=None, batch_size=256, data_file='/home/xyao/scVI/scVI_cell_clustering_HPC/Data/Kolod/Kolod_scVI_input_raw.h5ad', device='cpu', final_latent_file='final_latent_file.txt', gamma=1.0, knn=20, maxiter=2000, n_clusters=3, predict_label_file='/home/xyao/scDeepCluster/Result/Kolod/Batch_9/pred_labels.txt', pretrain_epochs=300, resolution=0.8, save_dir='/home/xyao/scDeepCluster/Result/Kolod/Batch_9', select_genes=0, sigma=2.5, tol=0.001, update_interval=1)
+(704, 14000)
+scDeepCluster(
+  (encoder): Sequential(
+    (0): Linear(in_features=14000, out_features=256, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=256, out_features=64, bias=True)
+    (3): ReLU()
+  )
+  (decoder): Sequential(
+    (0): Linear(in_features=32, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=64, out_features=256, bias=True)
+    (3): ReLU()
+  )
+  (_enc_mu): Linear(in_features=64, out_features=32, bias=True)
+  (_dec_mean): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): MeanAct()
+  )
+  (_dec_disp): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): DispAct()
+  )
+  (_dec_pi): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): Sigmoid()
+  )
+  (zinb_loss): ZINBLoss()
+)
+Pretraining stage
+Pretrain epoch   1, ZINB loss: 142.84416199
+Pretrain epoch   2, ZINB loss: 107.63555561
+Pretrain epoch   3, ZINB loss: 40.49429547
+Pretrain epoch   4, ZINB loss: nan
+Pretrain epoch   5, ZINB loss: nan
+Pretrain epoch   6, ZINB loss: nan
+Pretrain epoch   7, ZINB loss: nan
+Pretrain epoch   8, ZINB loss: nan
+Pretrain epoch   9, ZINB loss: nan
+Pretrain epoch  10, ZINB loss: nan
+Pretrain epoch  11, ZINB loss: nan
+Pretrain epoch  12, ZINB loss: nan
+Pretrain epoch  13, ZINB loss: nan
+Pretrain epoch  14, ZINB loss: nan
+Pretrain epoch  15, ZINB loss: nan
+Pretrain epoch  16, ZINB loss: nan
+Pretrain epoch  17, ZINB loss: nan
+Pretrain epoch  18, ZINB loss: nan
+Pretrain epoch  19, ZINB loss: nan
+Pretrain epoch  20, ZINB loss: nan
+Pretrain epoch  21, ZINB loss: nan
+Pretrain epoch  22, ZINB loss: nan
+Pretrain epoch  23, ZINB loss: nan
+Pretrain epoch  24, ZINB loss: nan
+Pretrain epoch  25, ZINB loss: nan
+Pretrain epoch  26, ZINB loss: nan
+Pretrain epoch  27, ZINB loss: nan
+Pretrain epoch  28, ZINB loss: nan
+Pretrain epoch  29, ZINB loss: nan
+Pretrain epoch  30, ZINB loss: nan
+Pretrain epoch  31, ZINB loss: nan
+Pretrain epoch  32, ZINB loss: nan
+Pretrain epoch  33, ZINB loss: nan
+Pretrain epoch  34, ZINB loss: nan
+Pretrain epoch  35, ZINB loss: nan
+Pretrain epoch  36, ZINB loss: nan
+Pretrain epoch  37, ZINB loss: nan
+Pretrain epoch  38, ZINB loss: nan
+Pretrain epoch  39, ZINB loss: nan
+Pretrain epoch  40, ZINB loss: nan
+Pretrain epoch  41, ZINB loss: nan
+Pretrain epoch  42, ZINB loss: nan
+Pretrain epoch  43, ZINB loss: nan
+Pretrain epoch  44, ZINB loss: nan
+Pretrain epoch  45, ZINB loss: nan
+Pretrain epoch  46, ZINB loss: nan
+Pretrain epoch  47, ZINB loss: nan
+Pretrain epoch  48, ZINB loss: nan
+Pretrain epoch  49, ZINB loss: nan
+Pretrain epoch  50, ZINB loss: nan
+Pretrain epoch  51, ZINB loss: nan
+Pretrain epoch  52, ZINB loss: nan
+Pretrain epoch  53, ZINB loss: nan
+Pretrain epoch  54, ZINB loss: nan
+Pretrain epoch  55, ZINB loss: nan
+Pretrain epoch  56, ZINB loss: nan
+Pretrain epoch  57, ZINB loss: nan
+Pretrain epoch  58, ZINB loss: nan
+Pretrain epoch  59, ZINB loss: nan
+Pretrain epoch  60, ZINB loss: nan
+Pretrain epoch  61, ZINB loss: nan
+Pretrain epoch  62, ZINB loss: nan
+Pretrain epoch  63, ZINB loss: nan
+Pretrain epoch  64, ZINB loss: nan
+Pretrain epoch  65, ZINB loss: nan
+Pretrain epoch  66, ZINB loss: nan
+Pretrain epoch  67, ZINB loss: nan
+Pretrain epoch  68, ZINB loss: nan
+Pretrain epoch  69, ZINB loss: nan
+Pretrain epoch  70, ZINB loss: nan
+Pretrain epoch  71, ZINB loss: nan
+Pretrain epoch  72, ZINB loss: nan
+Pretrain epoch  73, ZINB loss: nan
+Pretrain epoch  74, ZINB loss: nan
+Pretrain epoch  75, ZINB loss: nan
+Pretrain epoch  76, ZINB loss: nan
+Pretrain epoch  77, ZINB loss: nan
+Pretrain epoch  78, ZINB loss: nan
+Pretrain epoch  79, ZINB loss: nan
+Pretrain epoch  80, ZINB loss: nan
+Pretrain epoch  81, ZINB loss: nan
+Pretrain epoch  82, ZINB loss: nan
+Pretrain epoch  83, ZINB loss: nan
+Pretrain epoch  84, ZINB loss: nan
+Pretrain epoch  85, ZINB loss: nan
+Pretrain epoch  86, ZINB loss: nan
+Pretrain epoch  87, ZINB loss: nan
+Pretrain epoch  88, ZINB loss: nan
+Pretrain epoch  89, ZINB loss: nan
+Pretrain epoch  90, ZINB loss: nan
+Pretrain epoch  91, ZINB loss: nan
+Pretrain epoch  92, ZINB loss: nan
+Pretrain epoch  93, ZINB loss: nan
+Pretrain epoch  94, ZINB loss: nan
+Pretrain epoch  95, ZINB loss: nan
+Pretrain epoch  96, ZINB loss: nan
+Pretrain epoch  97, ZINB loss: nan
+Pretrain epoch  98, ZINB loss: nan
+Pretrain epoch  99, ZINB loss: nan
+Pretrain epoch 100, ZINB loss: nan
+Pretrain epoch 101, ZINB loss: nan
+Pretrain epoch 102, ZINB loss: nan
+Pretrain epoch 103, ZINB loss: nan
+Pretrain epoch 104, ZINB loss: nan
+Pretrain epoch 105, ZINB loss: nan
+Pretrain epoch 106, ZINB loss: nan
+Pretrain epoch 107, ZINB loss: nan
+Pretrain epoch 108, ZINB loss: nan
+Pretrain epoch 109, ZINB loss: nan
+Pretrain epoch 110, ZINB loss: nan
+Pretrain epoch 111, ZINB loss: nan
+Pretrain epoch 112, ZINB loss: nan
+Pretrain epoch 113, ZINB loss: nan
+Pretrain epoch 114, ZINB loss: nan
+Pretrain epoch 115, ZINB loss: nan
+Pretrain epoch 116, ZINB loss: nan
+Pretrain epoch 117, ZINB loss: nan
+Pretrain epoch 118, ZINB loss: nan
+Pretrain epoch 119, ZINB loss: nan
+Pretrain epoch 120, ZINB loss: nan
+Pretrain epoch 121, ZINB loss: nan
+Pretrain epoch 122, ZINB loss: nan
+Pretrain epoch 123, ZINB loss: nan
+Pretrain epoch 124, ZINB loss: nan
+Pretrain epoch 125, ZINB loss: nan
+Pretrain epoch 126, ZINB loss: nan
+Pretrain epoch 127, ZINB loss: nan
+Pretrain epoch 128, ZINB loss: nan
+Pretrain epoch 129, ZINB loss: nan
+Pretrain epoch 130, ZINB loss: nan
+Pretrain epoch 131, ZINB loss: nan
+Pretrain epoch 132, ZINB loss: nan
+Pretrain epoch 133, ZINB loss: nan
+Pretrain epoch 134, ZINB loss: nan
+Pretrain epoch 135, ZINB loss: nan
+Pretrain epoch 136, ZINB loss: nan
+Pretrain epoch 137, ZINB loss: nan
+Pretrain epoch 138, ZINB loss: nan
+Pretrain epoch 139, ZINB loss: nan
+Pretrain epoch 140, ZINB loss: nan
+Pretrain epoch 141, ZINB loss: nan
+Pretrain epoch 142, ZINB loss: nan
+Pretrain epoch 143, ZINB loss: nan
+Pretrain epoch 144, ZINB loss: nan
+Pretrain epoch 145, ZINB loss: nan
+Pretrain epoch 146, ZINB loss: nan
+Pretrain epoch 147, ZINB loss: nan
+Pretrain epoch 148, ZINB loss: nan
+Pretrain epoch 149, ZINB loss: nan
+Pretrain epoch 150, ZINB loss: nan
+Pretrain epoch 151, ZINB loss: nan
+Pretrain epoch 152, ZINB loss: nan
+Pretrain epoch 153, ZINB loss: nan
+Pretrain epoch 154, ZINB loss: nan
+Pretrain epoch 155, ZINB loss: nan
+Pretrain epoch 156, ZINB loss: nan
+Pretrain epoch 157, ZINB loss: nan
+Pretrain epoch 158, ZINB loss: nan
+Pretrain epoch 159, ZINB loss: nan
+Pretrain epoch 160, ZINB loss: nan
+Pretrain epoch 161, ZINB loss: nan
+Pretrain epoch 162, ZINB loss: nan
+Pretrain epoch 163, ZINB loss: nan
+Pretrain epoch 164, ZINB loss: nan
+Pretrain epoch 165, ZINB loss: nan
+Pretrain epoch 166, ZINB loss: nan
+Pretrain epoch 167, ZINB loss: nan
+Pretrain epoch 168, ZINB loss: nan
+Pretrain epoch 169, ZINB loss: nan
+Pretrain epoch 170, ZINB loss: nan
+Pretrain epoch 171, ZINB loss: nan
+Pretrain epoch 172, ZINB loss: nan
+Pretrain epoch 173, ZINB loss: nan
+Pretrain epoch 174, ZINB loss: nan
+Pretrain epoch 175, ZINB loss: nan
+Pretrain epoch 176, ZINB loss: nan
+Pretrain epoch 177, ZINB loss: nan
+Pretrain epoch 178, ZINB loss: nan
+Pretrain epoch 179, ZINB loss: nan
+Pretrain epoch 180, ZINB loss: nan
+Pretrain epoch 181, ZINB loss: nan
+Pretrain epoch 182, ZINB loss: nan
+Pretrain epoch 183, ZINB loss: nan
+Pretrain epoch 184, ZINB loss: nan
+Pretrain epoch 185, ZINB loss: nan
+Pretrain epoch 186, ZINB loss: nan
+Pretrain epoch 187, ZINB loss: nan
+Pretrain epoch 188, ZINB loss: nan
+Pretrain epoch 189, ZINB loss: nan
+Pretrain epoch 190, ZINB loss: nan
+Pretrain epoch 191, ZINB loss: nan
+Pretrain epoch 192, ZINB loss: nan
+Pretrain epoch 193, ZINB loss: nan
+Pretrain epoch 194, ZINB loss: nan
+Pretrain epoch 195, ZINB loss: nan
+Pretrain epoch 196, ZINB loss: nan
+Pretrain epoch 197, ZINB loss: nan
+Pretrain epoch 198, ZINB loss: nan
+Pretrain epoch 199, ZINB loss: nan
+Pretrain epoch 200, ZINB loss: nan
+Pretrain epoch 201, ZINB loss: nan
+Pretrain epoch 202, ZINB loss: nan
+Pretrain epoch 203, ZINB loss: nan
+Pretrain epoch 204, ZINB loss: nan
+Pretrain epoch 205, ZINB loss: nan
+Pretrain epoch 206, ZINB loss: nan
+Pretrain epoch 207, ZINB loss: nan
+Pretrain epoch 208, ZINB loss: nan
+Pretrain epoch 209, ZINB loss: nan
+Pretrain epoch 210, ZINB loss: nan
+Pretrain epoch 211, ZINB loss: nan
+Pretrain epoch 212, ZINB loss: nan
+Pretrain epoch 213, ZINB loss: nan
+Pretrain epoch 214, ZINB loss: nan
+Pretrain epoch 215, ZINB loss: nan
+Pretrain epoch 216, ZINB loss: nan
+Pretrain epoch 217, ZINB loss: nan
+Pretrain epoch 218, ZINB loss: nan
+Pretrain epoch 219, ZINB loss: nan
+Pretrain epoch 220, ZINB loss: nan
+Pretrain epoch 221, ZINB loss: nan
+Pretrain epoch 222, ZINB loss: nan
+Pretrain epoch 223, ZINB loss: nan
+Pretrain epoch 224, ZINB loss: nan
+Pretrain epoch 225, ZINB loss: nan
+Pretrain epoch 226, ZINB loss: nan
+Pretrain epoch 227, ZINB loss: nan
+Pretrain epoch 228, ZINB loss: nan
+Pretrain epoch 229, ZINB loss: nan
+Pretrain epoch 230, ZINB loss: nan
+Pretrain epoch 231, ZINB loss: nan
+Pretrain epoch 232, ZINB loss: nan
+Pretrain epoch 233, ZINB loss: nan
+Pretrain epoch 234, ZINB loss: nan
+Pretrain epoch 235, ZINB loss: nan
+Pretrain epoch 236, ZINB loss: nan
+Pretrain epoch 237, ZINB loss: nan
+Pretrain epoch 238, ZINB loss: nan
+Pretrain epoch 239, ZINB loss: nan
+Pretrain epoch 240, ZINB loss: nan
+Pretrain epoch 241, ZINB loss: nan
+Pretrain epoch 242, ZINB loss: nan
+Pretrain epoch 243, ZINB loss: nan
+Pretrain epoch 244, ZINB loss: nan
+Pretrain epoch 245, ZINB loss: nan
+Pretrain epoch 246, ZINB loss: nan
+Pretrain epoch 247, ZINB loss: nan
+Pretrain epoch 248, ZINB loss: nan
+Pretrain epoch 249, ZINB loss: nan
+Pretrain epoch 250, ZINB loss: nan
+Pretrain epoch 251, ZINB loss: nan
+Pretrain epoch 252, ZINB loss: nan
+Pretrain epoch 253, ZINB loss: nan
+Pretrain epoch 254, ZINB loss: nan
+Pretrain epoch 255, ZINB loss: nan
+Pretrain epoch 256, ZINB loss: nan
+Pretrain epoch 257, ZINB loss: nan
+Pretrain epoch 258, ZINB loss: nan
+Pretrain epoch 259, ZINB loss: nan
+Pretrain epoch 260, ZINB loss: nan
+Pretrain epoch 261, ZINB loss: nan
+Pretrain epoch 262, ZINB loss: nan
+Pretrain epoch 263, ZINB loss: nan
+Pretrain epoch 264, ZINB loss: nan
+Pretrain epoch 265, ZINB loss: nan
+Pretrain epoch 266, ZINB loss: nan
+Pretrain epoch 267, ZINB loss: nan
+Pretrain epoch 268, ZINB loss: nan
+Pretrain epoch 269, ZINB loss: nan
+Pretrain epoch 270, ZINB loss: nan
+Pretrain epoch 271, ZINB loss: nan
+Pretrain epoch 272, ZINB loss: nan
+Pretrain epoch 273, ZINB loss: nan
+Pretrain epoch 274, ZINB loss: nan
+Pretrain epoch 275, ZINB loss: nan
+Pretrain epoch 276, ZINB loss: nan
+Pretrain epoch 277, ZINB loss: nan
+Pretrain epoch 278, ZINB loss: nan
+Pretrain epoch 279, ZINB loss: nan
+Pretrain epoch 280, ZINB loss: nan
+Pretrain epoch 281, ZINB loss: nan
+Pretrain epoch 282, ZINB loss: nan
+Pretrain epoch 283, ZINB loss: nan
+Pretrain epoch 284, ZINB loss: nan
+Pretrain epoch 285, ZINB loss: nan
+Pretrain epoch 286, ZINB loss: nan
+Pretrain epoch 287, ZINB loss: nan
+Pretrain epoch 288, ZINB loss: nan
+Pretrain epoch 289, ZINB loss: nan
+Pretrain epoch 290, ZINB loss: nan
+Pretrain epoch 291, ZINB loss: nan
+Pretrain epoch 292, ZINB loss: nan
+Pretrain epoch 293, ZINB loss: nan
+Pretrain epoch 294, ZINB loss: nan
+Pretrain epoch 295, ZINB loss: nan
+Pretrain epoch 296, ZINB loss: nan
+Pretrain epoch 297, ZINB loss: nan
+Pretrain epoch 298, ZINB loss: nan
+Pretrain epoch 299, ZINB loss: nan
+Pretrain epoch 300, ZINB loss: nan
+Pretraining time: 100 seconds.
+Clustering stage
+Initializing cluster centers with kmeans.
+9 has been completed
+-----------------------
+10 has been submitted!
+The random seed set for torch is seed = 542
+### Autoencoder: Successfully preprocessed 14000 genes and 704 cells.
+Namespace(ae_weight_file='AE_weights.pth.tar', ae_weights=None, batch_size=256, data_file='/home/xyao/scVI/scVI_cell_clustering_HPC/Data/Kolod/Kolod_scVI_input_raw.h5ad', device='cpu', final_latent_file='final_latent_file.txt', gamma=1.0, knn=20, maxiter=2000, n_clusters=3, predict_label_file='/home/xyao/scDeepCluster/Result/Kolod/Batch_10/pred_labels.txt', pretrain_epochs=300, resolution=0.8, save_dir='/home/xyao/scDeepCluster/Result/Kolod/Batch_10', select_genes=0, sigma=2.5, tol=0.001, update_interval=1)
+(704, 14000)
+scDeepCluster(
+  (encoder): Sequential(
+    (0): Linear(in_features=14000, out_features=256, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=256, out_features=64, bias=True)
+    (3): ReLU()
+  )
+  (decoder): Sequential(
+    (0): Linear(in_features=32, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=64, out_features=256, bias=True)
+    (3): ReLU()
+  )
+  (_enc_mu): Linear(in_features=64, out_features=32, bias=True)
+  (_dec_mean): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): MeanAct()
+  )
+  (_dec_disp): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): DispAct()
+  )
+  (_dec_pi): Sequential(
+    (0): Linear(in_features=256, out_features=14000, bias=True)
+    (1): Sigmoid()
+  )
+  (zinb_loss): ZINBLoss()
+)
+Pretraining stage
+Pretrain epoch   1, ZINB loss: 142.44156716
+Pretrain epoch   2, ZINB loss: 108.42559398
+Pretrain epoch   3, ZINB loss: 39.16709761
+Pretrain epoch   4, ZINB loss: nan
+Pretrain epoch   5, ZINB loss: nan
+Pretrain epoch   6, ZINB loss: nan
+Pretrain epoch   7, ZINB loss: nan
+Pretrain epoch   8, ZINB loss: nan
+Pretrain epoch   9, ZINB loss: nan
+Pretrain epoch  10, ZINB loss: nan
+Pretrain epoch  11, ZINB loss: nan
+Pretrain epoch  12, ZINB loss: nan
+Pretrain epoch  13, ZINB loss: nan
+Pretrain epoch  14, ZINB loss: nan
+Pretrain epoch  15, ZINB loss: nan
+Pretrain epoch  16, ZINB loss: nan
+Pretrain epoch  17, ZINB loss: nan
+Pretrain epoch  18, ZINB loss: nan
+Pretrain epoch  19, ZINB loss: nan
+Pretrain epoch  20, ZINB loss: nan
+Pretrain epoch  21, ZINB loss: nan
+Pretrain epoch  22, ZINB loss: nan
+Pretrain epoch  23, ZINB loss: nan
+Pretrain epoch  24, ZINB loss: nan
+Pretrain epoch  25, ZINB loss: nan
+Pretrain epoch  26, ZINB loss: nan
+Pretrain epoch  27, ZINB loss: nan
+Pretrain epoch  28, ZINB loss: nan
+Pretrain epoch  29, ZINB loss: nan
+Pretrain epoch  30, ZINB loss: nan
+Pretrain epoch  31, ZINB loss: nan
+Pretrain epoch  32, ZINB loss: nan
+Pretrain epoch  33, ZINB loss: nan
+Pretrain epoch  34, ZINB loss: nan
+Pretrain epoch  35, ZINB loss: nan
+Pretrain epoch  36, ZINB loss: nan
+Pretrain epoch  37, ZINB loss: nan
+Pretrain epoch  38, ZINB loss: nan
+Pretrain epoch  39, ZINB loss: nan
+Pretrain epoch  40, ZINB loss: nan
+Pretrain epoch  41, ZINB loss: nan
+Pretrain epoch  42, ZINB loss: nan
+Pretrain epoch  43, ZINB loss: nan
+Pretrain epoch  44, ZINB loss: nan
+Pretrain epoch  45, ZINB loss: nan
+Pretrain epoch  46, ZINB loss: nan
+Pretrain epoch  47, ZINB loss: nan
+Pretrain epoch  48, ZINB loss: nan
+Pretrain epoch  49, ZINB loss: nan
+Pretrain epoch  50, ZINB loss: nan
+Pretrain epoch  51, ZINB loss: nan
+Pretrain epoch  52, ZINB loss: nan
+Pretrain epoch  53, ZINB loss: nan
+Pretrain epoch  54, ZINB loss: nan
+Pretrain epoch  55, ZINB loss: nan
+Pretrain epoch  56, ZINB loss: nan
+Pretrain epoch  57, ZINB loss: nan
+Pretrain epoch  58, ZINB loss: nan
+Pretrain epoch  59, ZINB loss: nan
+Pretrain epoch  60, ZINB loss: nan
+Pretrain epoch  61, ZINB loss: nan
+Pretrain epoch  62, ZINB loss: nan
+Pretrain epoch  63, ZINB loss: nan
+Pretrain epoch  64, ZINB loss: nan
+Pretrain epoch  65, ZINB loss: nan
+Pretrain epoch  66, ZINB loss: nan
+Pretrain epoch  67, ZINB loss: nan
+Pretrain epoch  68, ZINB loss: nan
+Pretrain epoch  69, ZINB loss: nan
+Pretrain epoch  70, ZINB loss: nan
+Pretrain epoch  71, ZINB loss: nan
+Pretrain epoch  72, ZINB loss: nan
+Pretrain epoch  73, ZINB loss: nan
+Pretrain epoch  74, ZINB loss: nan
+Pretrain epoch  75, ZINB loss: nan
+Pretrain epoch  76, ZINB loss: nan
+Pretrain epoch  77, ZINB loss: nan
+Pretrain epoch  78, ZINB loss: nan
+Pretrain epoch  79, ZINB loss: nan
+Pretrain epoch  80, ZINB loss: nan
+Pretrain epoch  81, ZINB loss: nan
+Pretrain epoch  82, ZINB loss: nan
+Pretrain epoch  83, ZINB loss: nan
+Pretrain epoch  84, ZINB loss: nan
+Pretrain epoch  85, ZINB loss: nan
+Pretrain epoch  86, ZINB loss: nan
+Pretrain epoch  87, ZINB loss: nan
+Pretrain epoch  88, ZINB loss: nan
+Pretrain epoch  89, ZINB loss: nan
+Pretrain epoch  90, ZINB loss: nan
+Pretrain epoch  91, ZINB loss: nan
+Pretrain epoch  92, ZINB loss: nan
+Pretrain epoch  93, ZINB loss: nan
+Pretrain epoch  94, ZINB loss: nan
+Pretrain epoch  95, ZINB loss: nan
+Pretrain epoch  96, ZINB loss: nan
+Pretrain epoch  97, ZINB loss: nan
+Pretrain epoch  98, ZINB loss: nan
+Pretrain epoch  99, ZINB loss: nan
+Pretrain epoch 100, ZINB loss: nan
+Pretrain epoch 101, ZINB loss: nan
+Pretrain epoch 102, ZINB loss: nan
+Pretrain epoch 103, ZINB loss: nan
+Pretrain epoch 104, ZINB loss: nan
+Pretrain epoch 105, ZINB loss: nan
+Pretrain epoch 106, ZINB loss: nan
+Pretrain epoch 107, ZINB loss: nan
+Pretrain epoch 108, ZINB loss: nan
+Pretrain epoch 109, ZINB loss: nan
+Pretrain epoch 110, ZINB loss: nan
+Pretrain epoch 111, ZINB loss: nan
+Pretrain epoch 112, ZINB loss: nan
+Pretrain epoch 113, ZINB loss: nan
+Pretrain epoch 114, ZINB loss: nan
+Pretrain epoch 115, ZINB loss: nan
+Pretrain epoch 116, ZINB loss: nan
+Pretrain epoch 117, ZINB loss: nan
+Pretrain epoch 118, ZINB loss: nan
+Pretrain epoch 119, ZINB loss: nan
+Pretrain epoch 120, ZINB loss: nan
+Pretrain epoch 121, ZINB loss: nan
+Pretrain epoch 122, ZINB loss: nan
+Pretrain epoch 123, ZINB loss: nan
+Pretrain epoch 124, ZINB loss: nan
+Pretrain epoch 125, ZINB loss: nan
+Pretrain epoch 126, ZINB loss: nan
+Pretrain epoch 127, ZINB loss: nan
+Pretrain epoch 128, ZINB loss: nan
+Pretrain epoch 129, ZINB loss: nan
+Pretrain epoch 130, ZINB loss: nan
+Pretrain epoch 131, ZINB loss: nan
+Pretrain epoch 132, ZINB loss: nan
+Pretrain epoch 133, ZINB loss: nan
+Pretrain epoch 134, ZINB loss: nan
+Pretrain epoch 135, ZINB loss: nan
+Pretrain epoch 136, ZINB loss: nan
+Pretrain epoch 137, ZINB loss: nan
+Pretrain epoch 138, ZINB loss: nan
+Pretrain epoch 139, ZINB loss: nan
+Pretrain epoch 140, ZINB loss: nan
+Pretrain epoch 141, ZINB loss: nan
+Pretrain epoch 142, ZINB loss: nan
+Pretrain epoch 143, ZINB loss: nan
+Pretrain epoch 144, ZINB loss: nan
+Pretrain epoch 145, ZINB loss: nan
+Pretrain epoch 146, ZINB loss: nan
+Pretrain epoch 147, ZINB loss: nan
+Pretrain epoch 148, ZINB loss: nan
+Pretrain epoch 149, ZINB loss: nan
+Pretrain epoch 150, ZINB loss: nan
+Pretrain epoch 151, ZINB loss: nan
+Pretrain epoch 152, ZINB loss: nan
+Pretrain epoch 153, ZINB loss: nan
+Pretrain epoch 154, ZINB loss: nan
+Pretrain epoch 155, ZINB loss: nan
+Pretrain epoch 156, ZINB loss: nan
+Pretrain epoch 157, ZINB loss: nan
+Pretrain epoch 158, ZINB loss: nan
+Pretrain epoch 159, ZINB loss: nan
+Pretrain epoch 160, ZINB loss: nan
+Pretrain epoch 161, ZINB loss: nan
+Pretrain epoch 162, ZINB loss: nan
+Pretrain epoch 163, ZINB loss: nan
+Pretrain epoch 164, ZINB loss: nan
+Pretrain epoch 165, ZINB loss: nan
+Pretrain epoch 166, ZINB loss: nan
+Pretrain epoch 167, ZINB loss: nan
+Pretrain epoch 168, ZINB loss: nan
+Pretrain epoch 169, ZINB loss: nan
+Pretrain epoch 170, ZINB loss: nan
+Pretrain epoch 171, ZINB loss: nan
+Pretrain epoch 172, ZINB loss: nan
+Pretrain epoch 173, ZINB loss: nan
+Pretrain epoch 174, ZINB loss: nan
+Pretrain epoch 175, ZINB loss: nan
+Pretrain epoch 176, ZINB loss: nan
+Pretrain epoch 177, ZINB loss: nan
+Pretrain epoch 178, ZINB loss: nan
+Pretrain epoch 179, ZINB loss: nan
+Pretrain epoch 180, ZINB loss: nan
+Pretrain epoch 181, ZINB loss: nan
+Pretrain epoch 182, ZINB loss: nan
+Pretrain epoch 183, ZINB loss: nan
+Pretrain epoch 184, ZINB loss: nan
+Pretrain epoch 185, ZINB loss: nan
+Pretrain epoch 186, ZINB loss: nan
+Pretrain epoch 187, ZINB loss: nan
+Pretrain epoch 188, ZINB loss: nan
+Pretrain epoch 189, ZINB loss: nan
+Pretrain epoch 190, ZINB loss: nan
+Pretrain epoch 191, ZINB loss: nan
+Pretrain epoch 192, ZINB loss: nan
+Pretrain epoch 193, ZINB loss: nan
+Pretrain epoch 194, ZINB loss: nan
+Pretrain epoch 195, ZINB loss: nan
+Pretrain epoch 196, ZINB loss: nan
+Pretrain epoch 197, ZINB loss: nan
+Pretrain epoch 198, ZINB loss: nan
+Pretrain epoch 199, ZINB loss: nan
+Pretrain epoch 200, ZINB loss: nan
+Pretrain epoch 201, ZINB loss: nan
+Pretrain epoch 202, ZINB loss: nan
+Pretrain epoch 203, ZINB loss: nan
+Pretrain epoch 204, ZINB loss: nan
+Pretrain epoch 205, ZINB loss: nan
+Pretrain epoch 206, ZINB loss: nan
+Pretrain epoch 207, ZINB loss: nan
+Pretrain epoch 208, ZINB loss: nan
+Pretrain epoch 209, ZINB loss: nan
+Pretrain epoch 210, ZINB loss: nan
+Pretrain epoch 211, ZINB loss: nan
+Pretrain epoch 212, ZINB loss: nan
+Pretrain epoch 213, ZINB loss: nan
+Pretrain epoch 214, ZINB loss: nan
+Pretrain epoch 215, ZINB loss: nan
+Pretrain epoch 216, ZINB loss: nan
+Pretrain epoch 217, ZINB loss: nan
+Pretrain epoch 218, ZINB loss: nan
+Pretrain epoch 219, ZINB loss: nan
+Pretrain epoch 220, ZINB loss: nan
+Pretrain epoch 221, ZINB loss: nan
+Pretrain epoch 222, ZINB loss: nan
+Pretrain epoch 223, ZINB loss: nan
+Pretrain epoch 224, ZINB loss: nan
+Pretrain epoch 225, ZINB loss: nan
+Pretrain epoch 226, ZINB loss: nan
+Pretrain epoch 227, ZINB loss: nan
+Pretrain epoch 228, ZINB loss: nan
+Pretrain epoch 229, ZINB loss: nan
+Pretrain epoch 230, ZINB loss: nan
+Pretrain epoch 231, ZINB loss: nan
+Pretrain epoch 232, ZINB loss: nan
+Pretrain epoch 233, ZINB loss: nan
+Pretrain epoch 234, ZINB loss: nan
+Pretrain epoch 235, ZINB loss: nan
+Pretrain epoch 236, ZINB loss: nan
+Pretrain epoch 237, ZINB loss: nan
+Pretrain epoch 238, ZINB loss: nan
+Pretrain epoch 239, ZINB loss: nan
+Pretrain epoch 240, ZINB loss: nan
+Pretrain epoch 241, ZINB loss: nan
+Pretrain epoch 242, ZINB loss: nan
+Pretrain epoch 243, ZINB loss: nan
+Pretrain epoch 244, ZINB loss: nan
+Pretrain epoch 245, ZINB loss: nan
+Pretrain epoch 246, ZINB loss: nan
+Pretrain epoch 247, ZINB loss: nan
+Pretrain epoch 248, ZINB loss: nan
+Pretrain epoch 249, ZINB loss: nan
+Pretrain epoch 250, ZINB loss: nan
+Pretrain epoch 251, ZINB loss: nan
+Pretrain epoch 252, ZINB loss: nan
+Pretrain epoch 253, ZINB loss: nan
+Pretrain epoch 254, ZINB loss: nan
+Pretrain epoch 255, ZINB loss: nan
+Pretrain epoch 256, ZINB loss: nan
+Pretrain epoch 257, ZINB loss: nan
+Pretrain epoch 258, ZINB loss: nan
+Pretrain epoch 259, ZINB loss: nan
+Pretrain epoch 260, ZINB loss: nan
+Pretrain epoch 261, ZINB loss: nan
+Pretrain epoch 262, ZINB loss: nan
+Pretrain epoch 263, ZINB loss: nan
+Pretrain epoch 264, ZINB loss: nan
+Pretrain epoch 265, ZINB loss: nan
+Pretrain epoch 266, ZINB loss: nan
+Pretrain epoch 267, ZINB loss: nan
+Pretrain epoch 268, ZINB loss: nan
+Pretrain epoch 269, ZINB loss: nan
+Pretrain epoch 270, ZINB loss: nan
+Pretrain epoch 271, ZINB loss: nan
+Pretrain epoch 272, ZINB loss: nan
+Pretrain epoch 273, ZINB loss: nan
+Pretrain epoch 274, ZINB loss: nan
+Pretrain epoch 275, ZINB loss: nan
+Pretrain epoch 276, ZINB loss: nan
+Pretrain epoch 277, ZINB loss: nan
+Pretrain epoch 278, ZINB loss: nan
+Pretrain epoch 279, ZINB loss: nan
+Pretrain epoch 280, ZINB loss: nan
+Pretrain epoch 281, ZINB loss: nan
+Pretrain epoch 282, ZINB loss: nan
+Pretrain epoch 283, ZINB loss: nan
+Pretrain epoch 284, ZINB loss: nan
+Pretrain epoch 285, ZINB loss: nan
+Pretrain epoch 286, ZINB loss: nan
+Pretrain epoch 287, ZINB loss: nan
+Pretrain epoch 288, ZINB loss: nan
+Pretrain epoch 289, ZINB loss: nan
+Pretrain epoch 290, ZINB loss: nan
+Pretrain epoch 291, ZINB loss: nan
+Pretrain epoch 292, ZINB loss: nan
+Pretrain epoch 293, ZINB loss: nan
+Pretrain epoch 294, ZINB loss: nan
+Pretrain epoch 295, ZINB loss: nan
+Pretrain epoch 296, ZINB loss: nan
+Pretrain epoch 297, ZINB loss: nan
+Pretrain epoch 298, ZINB loss: nan
+Pretrain epoch 299, ZINB loss: nan
+Pretrain epoch 300, ZINB loss: nan
+Pretraining time: 100 seconds.
+Clustering stage
+Initializing cluster centers with kmeans.
+10 has been completed
+-----------------------
